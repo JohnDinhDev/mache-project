@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @import 'normalize.css';
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
+@import 'modules/_wrapper';
+@import 'modules/_nav-bar';
+@import 'modules/_header';
