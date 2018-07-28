@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -271,7 +271,7 @@ template {
 }
 * {
     box-sizing: border-box;
-    font-family: 'Proxima Nova';
+    font-family: lato;
 }
 img {
     width: 100%;
@@ -347,7 +347,12 @@ a {
 .nav-bar__logo {
         font-size: 1.59rem;
         float: left;
+        font-family: 'Proxima Nova';
+        font-weight: 800;
     }
+.nav-bar__logo span {
+            font-family: 'Proxima Nova';
+        }
 .nav-bar ul {
         padding: 0;
         float: right;
@@ -360,11 +365,60 @@ a {
 .nav-bar a {
         padding-left: 13px;
         display: inline-block;
-        font-family: lato;
         font-weight: 800;
         font-size: 1rem;
         padding: 5.5px;
     }
 .header {
     position: relative;
+}
+.hero {
+
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: white;
+}
+.hero--bold {
+        font-weight: 800;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+    }
+.hero__title {
+        font-size: 46px;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin: 0;
+    }
+.hero__underline {
+        content: '';
+        width: 10%;
+        border-top: 3px solid #ed145b;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+.hero__subtitle {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1rem;
+    }
+.hero__subtitle--last {
+            margin-bottom: 70px;
+        }
+.hero__btn {
+
+    }
+.btn {
+    font-size: 0.93rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #ed145b;
+    padding: 15px 50px;
+    border-radius: 50px;
 }

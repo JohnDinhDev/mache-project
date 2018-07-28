@@ -13,6 +13,12 @@
     &__logo {
         font-size: 1.59rem;
         float: left;
+        font-family: 'Proxima Nova';
+        font-weight: 800;
+
+        span {
+            font-family: 'Proxima Nova';
+        }
     }
 
     ul {
@@ -29,7 +35,6 @@
     a {
         padding-left: 13px;
         display: inline-block;
-        font-family: lato;
         font-weight: 800;
         font-size: 1rem;
         padding: 5.5px;
