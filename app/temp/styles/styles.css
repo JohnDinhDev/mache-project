@@ -273,6 +273,9 @@ template {
     box-sizing: border-box;
     font-family: lato;
 }
+body {
+    /* overflow: hidden; */
+}
 img {
     width: 100%;
     height: auto;
@@ -344,16 +347,43 @@ a {
 }
 .nav-bar--red {
         color: #ed145b;
+        position: absolute;
+        left: -4.5rem;
+    }
+@media (min-width: 800px) {
+.nav-bar--red {
+            position: relative;
+            left: auto
+    }
     }
 .nav-bar__logo {
-        font-size: 1.59rem;
-        float: left;
+        font-size: 3.5rem;
+        text-align: left;
         font-family: 'Proxima Nova';
         font-weight: 800;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        margin-right: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
+/* display: none; */
 .nav-bar__logo span {
             font-family: 'Proxima Nova';
         }
+@media (min-width: 800px) {
+.nav-bar__logo {
+            float: left;
+            font-size: 1.59rem;
+            text-align: center;
+            display: inline;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-transform: none;
+                    transform: none
+    }
+    }
 .nav-bar ul {
         padding: 0;
         float: right;
@@ -362,6 +392,12 @@ a {
 .nav-bar li {
         list-style: none;
         float: left;
+        display: none;
+    }
+@media (min-width: 800px) {
+.nav-bar li {
+            display: inline-block
+    }
     }
 .nav-bar a {
         padding-left: 13px;
@@ -388,28 +424,59 @@ a {
         display: inline-block;
         position: relative;
         top: 1px;
+        display: block;
+    }
+@media (min-width: 800px) {
+.hero--bold {
+            display: inline-block
+    }
     }
 .hero__title {
-        font-size: 46px;
+        font-size: 30px;
         text-transform: uppercase;
         font-weight: 100;
         margin: 0;
+    }
+@media (min-width: 1010px) {
+.hero__title {
+            font-size: 46px
+    }
     }
 .hero__underline {
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
         margin-bottom: 40px;
-        width: 10%;
+        width: 200px;
     }
 .hero__subtitle {
         font-size: 22px;
         font-weight: 300;
-        line-height: 1rem;
+        line-height: 1.5rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+@media (min-width: 800px) {
+.hero__subtitle {
+            display: none
+    }
+    }
+@media (min-width: 1010px) {
+.hero__subtitle {
+            line-height: 1rem;
+            display: inline-block
+    }
     }
 .hero__subtitle--last {
+            margin-top: 20px;
             margin-bottom: 70px;
         }
+.hero__btn {
+        display: block;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 .btn {
     font-size: 0.93rem;
     font-weight: 800;

@@ -8,16 +8,39 @@
 
     &--red {
         color: #ed145b;
+        position: absolute;
+        left: -4.5rem;
+
+        @mixin atMedium {
+            position: relative;
+            left: auto;
+        }
     }
 
     &__logo {
-        font-size: 1.59rem;
-        float: left;
+        font-size: 3.5rem;
+        text-align: left;
         font-family: 'Proxima Nova';
         font-weight: 800;
+        position: relative;
+        display: inline-block;
+        margin-left: 50%;
+        margin-right: 50%;
+        transform: translateX(-50%);
+        /* display: none; */
 
         span {
             font-family: 'Proxima Nova';
+        }
+
+        @mixin atMedium {
+            float: left;
+            font-size: 1.59rem;
+            text-align: center;
+            display: inline;
+            margin-left: auto;
+            margin-right: auto;
+            transform: none;
         }
     }
 
@@ -30,6 +53,11 @@
     li {
         list-style: none;
         float: left;
+        display: none;
+
+        @mixin atMedium {
+            display: inline-block;
+        }
     }
 
     a {

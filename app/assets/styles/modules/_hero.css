@@ -12,13 +12,22 @@
         display: inline-block;
         position: relative;
         top: 1px;
+        display: block;
+
+        @mixin atMedium {
+            display: inline-block;
+        }
     }
 
     &__title {
-        font-size: 46px;
+        font-size: 30px;
         text-transform: uppercase;
         font-weight: 100;
         margin: 0;
+
+        @mixin atLarge {
+            font-size: 46px;
+        }
     }
 
     &__underline {
@@ -26,16 +35,35 @@
         margin-right: auto;
         margin-top: 40px;
         margin-bottom: 40px;
-        width: 10%;
+        width: 200px;
     }
 
     &__subtitle {
         font-size: 22px;
         font-weight: 300;
-        line-height: 1rem;
+        line-height: 1.5rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @mixin atMedium {
+            display: none;
+        }
+
+        @mixin atLarge {
+            line-height: 1rem;
+            display: inline-block;
+        }
 
         &--last {
+            margin-top: 20px;
             margin-bottom: 70px;
         }
+    }
+
+    &__btn {
+        display: block;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
