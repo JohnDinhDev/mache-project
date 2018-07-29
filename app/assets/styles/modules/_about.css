@@ -1,28 +1,41 @@
 .about {
 
-    position: absolute;
+    position: relative;
     height: 650px;
     background-color: #f4f4f4;
     width: 100%;
-    z-index: -1;
+    overflow: hidden;
+
+    @mixin atSmall {
+        overflow: unset;
+    }
 
     &__slanted-top {
-        height: 35px;
-        width: 100%;
-        background-color: #ed145b;
+        height: 60px;
+        width: 110%;
+        background-color: $mainRed;
         margin: 0;
         padding: 0;
         display: block;
         transform-origin: 100% 50%;
-        transform: rotate(-1deg);
+        transform: rotate(-3deg);
         position: absolute;
-        top: -35px;
-        left: -20px;
+        top: -60px;
+        left: -2px;
+
+        @mixin atSmall {
+            width: 100%;
+            top: -35px;
+            left: -20px;
+            height: 35px;
+            transform: rotate(-1deg);
+        }
     }
+
 
     &__text {
         position: absolute;
-        color: #5a5a5a;
+        color: $mainGray;
         left: 10%;
         top: 150px;
     }
@@ -49,7 +62,7 @@
     }
 
     &__video {
-        color: #ed145b;
+        color: $mainRed;
         text-transform: uppercase;
     }
 

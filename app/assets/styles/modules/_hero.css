@@ -24,6 +24,7 @@
         text-transform: uppercase;
         font-weight: 100;
         margin: 0;
+        padding-top: 100px;
 
         @mixin atLarge {
             font-size: 46px;
@@ -62,7 +63,6 @@
 
     &__btn {
         display: block;
-        width: 200px;
         margin-left: auto;
         margin-right: auto;
     }

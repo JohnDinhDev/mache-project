@@ -7,7 +7,7 @@
     margin-top: 40px;
 
     &--red {
-        color: #ed145b;
+        color: $mainRed;
         position: absolute;
         left: -4.5rem;
 
@@ -27,7 +27,6 @@
         margin-left: 50%;
         margin-right: 50%;
         transform: translateX(-50%);
-        /* display: none; */
 
         span {
             font-family: 'Proxima Nova';
