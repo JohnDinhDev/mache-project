@@ -7,7 +7,6 @@
     transform: translateY(-50%);
     color: white;
 
-
     &--bold {
         font-weight: 800;
         display: inline-block;
@@ -23,13 +22,11 @@
     }
 
     &__underline {
-        content: '';
-        width: 10%;
-        border-top: 3px solid #ed145b;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
         margin-bottom: 40px;
+        width: 10%;
     }
 
     &__subtitle {
@@ -40,9 +37,5 @@
         &--last {
             margin-bottom: 70px;
         }
-    }
-
-    &__btn {
-
     }
 }

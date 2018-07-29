@@ -276,6 +276,7 @@ template {
 img {
     width: 100%;
     height: auto;
+    display: block;
 }
 a {
     text-decoration: none;
@@ -395,13 +396,11 @@ a {
         margin: 0;
     }
 .hero__underline {
-        content: '';
-        width: 10%;
-        border-top: 3px solid #ed145b;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
         margin-bottom: 40px;
+        width: 10%;
     }
 .hero__subtitle {
         font-size: 22px;
@@ -411,9 +410,6 @@ a {
 .hero__subtitle--last {
             margin-bottom: 70px;
         }
-.hero__btn {
-
-    }
 .btn {
     font-size: 0.93rem;
     font-weight: 800;
@@ -422,3 +418,91 @@ a {
     padding: 15px 50px;
     border-radius: 50px;
 }
+.about {
+
+    position: absolute;
+    height: 650px;
+    background-color: #f4f4f4;
+    width: 100%;
+    z-index: -1;
+}
+.about__slanted-top {
+        height: 35px;
+        width: 100%;
+        background-color: #ed145b;
+        margin: 0;
+        padding: 0;
+        display: block;
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+        -webkit-transform: rotate(-1deg);
+                transform: rotate(-1deg);
+        position: absolute;
+        top: -35px;
+        left: -20px;
+    }
+.about__text {
+        position: absolute;
+        color: #5a5a5a;
+        left: 10%;
+        top: 150px;
+    }
+.about__title {
+        font-weight: 300;
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+.about__subtitle {
+        font-size: 15px;
+        font-weight: 300;
+        max-width: 550px;
+        line-height: 2rem;
+        margin-top: 0;
+        margin-bottom: 45px;
+    }
+.about__underline {
+        width: 20%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+.about__video {
+        color: #ed145b;
+        text-transform: uppercase;
+    }
+.about__icon {
+        font-size: 2rem;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+    }
+.about__macbook {
+        display: inline-block;
+        position: absolute;
+        top: 18%;
+        right: 40px;
+        /* transform: scale(0.9); */
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+    }
+.underline {
+    border-top: 2px solid #ed145b;
+}
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+.icon {
+            background-image: url('../../assets/images/sprites/sprite-aa3cadf9.svg');
+        }
+.no-svg .icon {
+            background-image: url('../../assets/images/sprites/sprite-aa3cadf9.png');            
+        }
+.icon--macbook {
+        width: 1039px;
+        height: 635px;
+        background-position: 0 0;
+    }
+.icon--play {
+        width: 35px;
+        height: 35px;
+        background-position: 0 100%;
+    }
