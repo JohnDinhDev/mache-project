@@ -20,6 +20,7 @@
         height: 120px;
         background-color: $mainRed;
         width: 100%;
+        vertical-align: middle;
 
         &__title {
             font-weight: 400;
@@ -51,6 +52,7 @@
         padding: 10px;
 
         @mixin atXLarge {
+            margin-top: 0;
             display: inline-block;
             padding: 12px;
             margin-left: 2rem;

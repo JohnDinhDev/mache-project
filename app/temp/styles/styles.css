@@ -730,6 +730,7 @@ Instead edit gulp/templates/sprite */
         height: 120px;
         background-color: #ed145b;
         width: 100%;
+        vertical-align: middle;
     }
 .macbook-screen__join-us__title {
             font-weight: 400;
@@ -763,6 +764,7 @@ Instead edit gulp/templates/sprite */
     }
 @media (min-width: 1600px) {
 .macbook-screen__btn {
+            margin-top: 0;
             display: inline-block;
             padding: 12px;
             margin-left: 2rem
