@@ -1,13 +1,16 @@
 .about {
 
     position: relative;
-    height: 650px;
     background-color: #f4f4f4;
     width: 100%;
     overflow: hidden;
 
-    @mixin atSmall {
+    @mixin atLarge {
         overflow: unset;
+    }
+
+    @mixin atLarge {
+        height: auto;
     }
 
     &__slanted-top {
@@ -25,25 +28,68 @@
 
         @mixin atSmall {
             width: 100%;
-            top: -35px;
+            top: -50px;
             left: -20px;
-            height: 35px;
-            transform: rotate(-1deg);
+            height: 50px;
+            transform: rotate(-2deg);
+        }
+
+        @mixin atMedium {
+            top: -50px;
+        }
+
+        @mixin atLarge {
+            top: -55px;
+            transform: rotate(-1.5deg);
         }
     }
 
 
     &__text {
-        position: absolute;
         color: $mainGray;
-        left: 10%;
-        top: 150px;
+        padding-top: 4%;
+        text-align: center;
+
+        @mixin atMedium {
+            padding-left: 0%;
+        }
+    }
+
+    &__title-text {
+
+        @mixin atLarge {
+            position: absolute;
+            left: 10%;
+            top: 6rem;
+        }
     }
 
     &__title {
         font-weight: 300;
         font-size: 38px;
-        margin-bottom: 0;
+        text-align: center;
+
+
+        @mixin atLarge {
+            text-align: left;
+        }
+    }
+
+    &__title--first {
+
+        margin-top: 5rem;
+
+        @mixin atSmall {
+            margin-top: 3rem;
+        }
+    }
+
+    &__title--second {
+        padding-bottom: 2rem;
+
+        @mixin atLarge {
+            padding: 0;
+        }
     }
 
     &__subtitle {
@@ -51,19 +97,41 @@
         font-weight: 300;
         max-width: 550px;
         line-height: 2rem;
-        margin-top: 0;
         margin-bottom: 45px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @mixin atLarge {
+            margin-left: 25%;
+            transform: none;
+            text-align: left;
+        }
     }
 
     &__underline {
-        width: 20%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -3rem;
+
+        @mixin atLarge {
+            margin-bottom: 30px;
+            margin-left: 25%;
+            width: 25%;
+            margin-top: 14rem;
+        }
     }
 
     &__video {
         color: $mainRed;
         text-transform: uppercase;
+        display: block;
+        padding-bottom: 4rem;
+
+        @mixin atLarge {
+            text-align: left;
+            padding-left: 25%;
+        }
     }
 
     &__icon {
@@ -75,11 +143,17 @@
     }
 
     &__macbook {
-        display: inline-block;
-        position: absolute;
-        top: 18%;
-        right: 40px;
-        /* transform: scale(0.9); */
+        position: relative;
+        display: none;
         transform-origin: 100% 50%;
+
+        @mixin atLarge {
+            display: inline-block;
+            bottom: -5rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            transform: none;
+            bottom: -7rem;
+        }
     }
 }
