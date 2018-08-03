@@ -269,6 +269,31 @@ template {
 [hidden] {
   display: none;
 }
+.tns-outer{padding:0 !important}
+.tns-outer [hidden]{display:none !important}
+.tns-outer [aria-controls],.tns-outer [data-action]{cursor:pointer}
+.tns-slider{transition:all 0s}
+.tns-slider>div,.tns-slider>li{box-sizing:border-box}
+.tns-horizontal.tns-subpixel{white-space:nowrap}
+.tns-horizontal.tns-subpixel>div,.tns-horizontal.tns-subpixel>li{display:inline-block;vertical-align:top;white-space:normal}
+.tns-horizontal.tns-no-subpixel:after{content:'';display:table;clear:both}
+.tns-horizontal.tns-no-subpixel>div,.tns-horizontal.tns-no-subpixel>li{float:left;margin-right:-100%}
+.tns-no-calc{position:relative;left:0}
+.tns-gallery{position:relative;left:0;min-height:1px}
+.tns-gallery>div,.tns-gallery>li{position:absolute;left:-100%;transition:opacity 0s, -webkit-transform 0s;transition:transform 0s, opacity 0s;transition:transform 0s, opacity 0s, -webkit-transform 0s}
+.tns-gallery>.tns-moving{transition:all 0.25s}
+.tns-lazy-img{transition:opacity 0.6s;opacity:0.6}
+.tns-lazy-img.loaded{opacity:1}
+.tns-ah{transition:height 0s}
+.tns-ovh{overflow:hidden}
+.tns-visually-hidden{position:absolute;left:-10000em}
+.tns-transparent{opacity:0;visibility:hidden}
+.tns-fadeIn{opacity:1;filter:alpha(opacity=100);z-index:0}
+.tns-normal,.tns-fadeOut{opacity:0;filter:alpha(opacity=0);z-index:-1}
+.tns-t-subp2{margin:0 auto;width:310px;position:relative;height:10px;overflow:hidden}
+.tns-t-ct{width:2333.3333333%;width:calc(100% * 70 / 3);position:absolute;right:0}
+.tns-t-ct:after{content:'';display:table;clear:both}
+.tns-t-ct>div{width:1.4285714%;width:calc(100% / 70);height:10px;float:left}
 * {
     box-sizing: border-box;
     font-family: lato;
@@ -845,39 +870,35 @@ Instead edit gulp/templates/sprite */
         font-weight: 400;
         padding-bottom: 6rem;
     }
-.slider {
-
-    height: 500px;
-    background: url('/assets/images/quotes-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.tns-outer {
+    /* width: 100%; */
+    min-height: 400px;
+    max-height: 501px;
+    background-image: url('../../assets/images/quotes-bg.jpg');
     position: relative;
 
 }
-@media (min-width: 800px) {
-.slider {
-        margin-top: auto
-
-}
-    }
-.slider__prev {
-
-        position: absolute;
-        top: 50%;
-        left: 19%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-.slider__prev span {
-            display: inline-block;
+.tns-outer .tns-controls button {
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            height: 33px;
+            width: 15px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            color: transparent;
         }
-.slider__next {
-        position: absolute;
-        top: 50%;
-        right: 19%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-.slider__next span {
-            display: inline-block;
+.tns-outer .tns-controls button[data-controls="prev"] {
+            background: url('../../assets/images/icons/left-arrow.svg');
+            left: 19%;
+        }
+.tns-outer .tns-controls button[data-controls="next"] {
+            background: url('../../assets/images/icons/right-arrow.svg');
+            right: 19%;
+        }
+.tns-outer .tns-inner .tns-item {
+            color: white;
         }

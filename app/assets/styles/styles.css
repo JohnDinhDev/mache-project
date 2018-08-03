@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @import 'normalize.css';
+@import '../../../node_modules/tiny-slider/dist/tiny-slider.css';
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
