@@ -805,33 +805,27 @@ Instead edit gulp/templates/sprite */
     display: table;
     }
 @media (min-width: 800px) {
-        .row__medium-3 {
-            float: left;
-            width: 25%;
-        }
-    }
-@media (min-width: 800px) {
-        .row__medium-4 {
-            float: left;
-            width: 33.33%;
-        }
-    }
-@media (min-width: 1080px) {
-        .row__medium-5 {
-            float: left;
-            width: 41.66%;
-        }
-    }
-@media (min-width: 800px) {
         .row__medium-7 {
             float: left;
             width: 58.33%;
         }
     }
-@media (min-width: 800px) {
-        .row__medium-8 {
+@media (min-width: 530px) {
+        .row__medium-6 {
             float: left;
-            width: 66.66%;
+            width: 50%;
+        }
+    }
+@media (min-width: 1080px) {
+        .row__large-3 {
+            float: left;
+            width: 25%;
+        }
+    }
+@media (min-width: 1080px) {
+        .row__large-5 {
+            float: left;
+            width: 41.66%;
         }
     }
 .our-services {

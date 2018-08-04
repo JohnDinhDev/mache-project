@@ -3,37 +3,30 @@
     @mixin clearfix;
 
     @mixin atMedium {
-        &__medium-3 {
-            float: left;
-            width: 25%;
-        }
-    }
-
-    @mixin atMedium {
-        &__medium-4 {
-            float: left;
-            width: 33.33%;
-        }
-    }
-
-    @mixin atLarge {
-        &__medium-5 {
-            float: left;
-            width: 41.66%;
-        }
-    }
-
-    @mixin atMedium {
         &__medium-7 {
             float: left;
             width: 58.33%;
         }
     }
 
-    @mixin atMedium {
-        &__medium-8 {
+    @mixin atSmall {
+        &__medium-6 {
             float: left;
-            width: 66.66%;
+            width: 50%;
+        }
+    }
+
+    @mixin atLarge {
+        &__large-3 {
+            float: left;
+            width: 25%;
+        }
+    }
+
+    @mixin atLarge {
+        &__large-5 {
+            float: left;
+            width: 41.66%;
         }
     }
     
