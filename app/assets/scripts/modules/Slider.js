@@ -9,7 +9,8 @@ class Slider {
     slider() {
         const slider = tns({
             speed: 800,
-            nav: false
+            nav: false,
+            autoplay: true,
         })
     }
 }

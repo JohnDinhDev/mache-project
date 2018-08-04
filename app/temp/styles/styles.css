@@ -311,6 +311,10 @@ a {
     font-family: 'Proxima Nova';
     src: url(../fonts/ProximaNova-Black.ttf);
 }
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../fonts/DroidSerif-Bold.ttf);
+}
 .wrapper {
     overflow: hidden;
     padding-left: 5%;
@@ -878,8 +882,11 @@ Instead edit gulp/templates/sprite */
     position: relative;
 
 }
+.tns-outer button[data-action] {
+        z-index: -9;
+        position: absolute;
+    }
 .tns-outer .tns-controls button {
-            background-repeat: no-repeat;
             background-color: transparent;
             border: none;
             outline: none;
@@ -890,15 +897,76 @@ Instead edit gulp/templates/sprite */
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
             color: transparent;
+            z-index: 999;
+            display: none;
         }
+@media (min-width: 800px) {
+.tns-outer .tns-controls button {
+                display: block
+        }
+    }
 .tns-outer .tns-controls button[data-controls="prev"] {
             background: url('../../assets/images/icons/left-arrow.svg');
+            background-repeat: no-repeat;
             left: 19%;
         }
 .tns-outer .tns-controls button[data-controls="next"] {
             background: url('../../assets/images/icons/right-arrow.svg');
+            background-repeat: no-repeat;
             right: 19%;
         }
+.tns-outer .tns-inner {
+
+        min-height: 400px;
+        max-height: 501px;
+    }
 .tns-outer .tns-inner .tns-item {
             color: white;
+            font-size: 1.1rem !important;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 6.5rem;
+            min-height: 400px;
+            max-height: 501px;
         }
+@media (min-width: 800px) {
+.tns-outer .tns-inner .tns-item {
+                font-size: 1.5rem !important;
+                padding-top: 8rem
+        }
+    }
+@media (min-width: 1080px) {
+.tns-outer .tns-inner .tns-item {
+                padding-top: 10rem;
+                font-size: 1.5625rem !important
+        }
+    }
+.slider__quotes {
+        font-family: 'Droid Serif';
+        color: #ed145b;
+        font-size: 9.875rem;
+        position: absolute;
+        z-index: 99;
+        display: block;
+    }
+.slider__quotes__container {
+
+
+        }
+.slider__quotes--first {
+            position: absolute;
+            top: -20%;
+            right: 50%;
+            -webkit-transform: scale(-1, 1) translateX(-50%);
+                    transform: scale(-1, 1) translateX(-50%);
+        }
+.slider__quotes--second {
+            bottom: 5%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);    
+        }
+.slider__container {
+    position: relative;
+}

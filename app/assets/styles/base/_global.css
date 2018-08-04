@@ -18,3 +18,8 @@ a {
     font-family: 'Proxima Nova';
     src: url(../fonts/ProximaNova-Black.ttf);
 }
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../fonts/DroidSerif-Bold.ttf);
+}

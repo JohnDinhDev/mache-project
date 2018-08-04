@@ -1,0 +1,73 @@
+.tns-outer {
+    /* width: 100%; */
+    min-height: 400px;
+    max-height: 501px;
+    background-image: url('../../assets/images/quotes-bg.jpg');
+    position: relative;
+
+    button[data-action] {
+        z-index: -9;
+        position: absolute;
+    }
+
+    .tns-controls {
+
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            height: 33px;
+            width: 15px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: transparent;
+            z-index: 999;
+            display: none;
+
+            @mixin atMedium {
+                display: block;
+            }
+        }
+
+        button[data-controls="prev"] {
+            background: url('../../assets/images/icons/left-arrow.svg');
+            background-repeat: no-repeat;
+            left: 19%;
+        }
+
+        button[data-controls="next"] {
+            background: url('../../assets/images/icons/right-arrow.svg');
+            background-repeat: no-repeat;
+            right: 19%;
+        }
+    }
+
+    .tns-inner {
+
+        min-height: 400px;
+        max-height: 501px;
+
+        .tns-item {
+            color: white;
+            font-size: 1.1rem !important;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 6.5rem;
+            min-height: 400px;
+            max-height: 501px;
+
+            @mixin atMedium {
+                font-size: 1.5rem !important;
+                padding-top: 8rem;
+            }
+
+            @mixin atLarge {
+                padding-top: 10rem;
+                font-size: 1.5625rem !important;
+            }
+        }
+    }
+
+}
