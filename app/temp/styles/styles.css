@@ -924,6 +924,11 @@ Instead edit gulp/templates/sprite */
             min-height: 400px;
             max-height: 501px;
         }
+@media (min-width: 530px) {
+.tns-outer .tns-inner .tns-item {
+                padding-top: 9rem
+        }
+    }
 @media (min-width: 800px) {
 .tns-outer .tns-inner .tns-item {
                 font-size: 1.5rem !important;
@@ -944,10 +949,6 @@ Instead edit gulp/templates/sprite */
         z-index: 99;
         display: block;
     }
-.slider__quotes__container {
-
-
-        }
 .slider__quotes--first {
             position: absolute;
             top: -20%;

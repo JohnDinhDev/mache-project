@@ -8,11 +8,6 @@
         z-index: 99;
         display: block;
 
-        &__container {
-
-
-        }
-
         &--first {
             position: absolute;
             top: -20%;

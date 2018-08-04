@@ -58,6 +58,10 @@
             min-height: 400px;
             max-height: 501px;
 
+            @mixin atSmall {
+                padding-top: 9rem;
+            }
+
             @mixin atMedium {
                 font-size: 1.5rem !important;
                 padding-top: 8rem;
