@@ -94,7 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _Slider = __webpack_require__(/*! ./modules/Slider */ \"./app/assets/scripts/modules/Slider.js\");\n\nvar _Slider2 = _interopRequireDefault(_Slider);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nnew _Slider2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\n\nvar _Slider = __webpack_require__(/*! ./modules/Slider */ \"./app/assets/scripts/modules/Slider.js\");\n\nvar _Slider2 = _interopRequireDefault(_Slider);\n\nvar _Prices = __webpack_require__(/*! ./modules/Prices */ \"./app/assets/scripts/modules/Prices.js\");\n\nvar _Prices2 = _interopRequireDefault(_Prices);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nnew _Slider2.default();\nnew _Prices2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/Prices.js":
+/*!**********************************************!*\
+  !*** ./app/assets/scripts/modules/Prices.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Prices = function () {\n    function Prices() {\n        _classCallCheck(this, Prices);\n\n        this.priceBoxes = document.querySelectorAll('.price-selection');\n        this.prices = document.querySelectorAll('.price-selection__price');\n        this.changeBackground();\n    }\n\n    _createClass(Prices, [{\n        key: 'changeBackground',\n        value: function changeBackground() {\n            var _this = this;\n\n            this.priceBoxes.forEach(function (priceBox) {\n                priceBox.addEventListener('mouseover', function () {\n                    var activePrice = priceBox.querySelector('.price-selection__price');\n                    _this.prices.forEach(function (price) {\n                        price.classList.remove('price-selection__price--active');\n                    });\n                    activePrice.classList.add('price-selection__price--active');\n                });\n            });\n        }\n    }]);\n\n    return Prices;\n}();\n\nexports.default = Prices;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Prices.js?");
 
 /***/ }),
 

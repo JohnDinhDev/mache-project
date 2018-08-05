@@ -1,0 +1,61 @@
+.price-selection {
+    /* width: 260px; */
+    height: 470px;
+    background-color: white;
+    position: relative;
+    margin-top: 80px;
+
+    &__container {
+        /* background-color: white */
+    }
+
+    &__price {
+        background-color: $mainGray;
+        color: #fff;
+        padding-bottom: 56px;
+        position: relative;
+        transition: 400ms ease-in all;
+
+        &--active {
+            background-color: $mainRed;
+        }
+
+        &__amount {
+            font-size: 50px;
+            margin: 0;
+            padding-top: 2rem;
+        }
+
+        &__dollar {
+            font-size: 20px;
+            margin-right: -10px;
+        }
+
+        &__per-month {
+            font-size: 1rem;
+            display: block;
+        }
+    }
+
+
+    &__btn {
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        &--description {
+            position: absolute;
+            top: 8.8rem;
+        }
+
+        &--buy-now {
+            position: absolute;
+            bottom: 2rem;
+        }
+
+    }
+
+    &__description {
+        padding-top: 4rem;
+    }
+}

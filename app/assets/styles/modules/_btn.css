@@ -15,4 +15,9 @@
         background-color: white;
         color: $mainRed;
     }
+
+    &--gray {
+        background-color:#f4f4f4;
+        color: $mainGray;
+    }
 }

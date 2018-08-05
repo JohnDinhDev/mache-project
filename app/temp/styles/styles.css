@@ -345,7 +345,7 @@ a {
         padding-left: 0;
         padding-right: 0;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .wrapper--no-padding-until-large {
             padding-left: 18px;
             padding-right: 18px
@@ -362,6 +362,9 @@ a {
 .wrapper--b-margin {
             margin-bottom: 3.875rem
     }
+    }
+.wrapper--container {
+        overflow: hidden;
     }
 .nav-bar {
 
@@ -464,7 +467,7 @@ a {
         margin: 0;
         padding-top: 100px;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .hero__title {
             font-size: 46px
     }
@@ -488,7 +491,7 @@ a {
             display: none
     }
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .hero__subtitle {
             line-height: 1rem;
             display: inline-block
@@ -521,6 +524,10 @@ a {
         background-color: white;
         color: #ed145b;
     }
+.btn--gray {
+        background-color:#f4f4f4;
+        color: #5a5a5a;
+    }
 .about {
 
     position: relative;
@@ -528,12 +535,12 @@ a {
     width: 100%;
     overflow: hidden;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about {
         overflow: unset
 }
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about {
         height: auto
 }
@@ -568,7 +575,7 @@ a {
             top: -50px
     }
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__slanted-top {
             top: -55px;
             -webkit-transform: rotate(-1.5deg);
@@ -585,7 +592,7 @@ a {
             padding-left: 0%
     }
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__title-text {
             position: absolute;
             left: 10%;
@@ -597,7 +604,7 @@ a {
         font-size: 38px;
         text-align: center;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__title {
             text-align: left
     }
@@ -614,7 +621,7 @@ a {
 .about__title--second {
         padding-bottom: 2rem;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__title--second {
             padding: 0
     }
@@ -629,7 +636,7 @@ a {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__subtitle {
             margin-left: 25%;
             -webkit-transform: none;
@@ -643,7 +650,7 @@ a {
         margin-right: auto;
         margin-top: -3rem;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__underline {
             margin-bottom: 30px;
             margin-left: 25%;
@@ -657,7 +664,7 @@ a {
         display: block;
         padding-bottom: 4rem;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__video {
             text-align: left;
             padding-left: 25%
@@ -676,7 +683,7 @@ a {
         -webkit-transform-origin: 100% 50%;
                 transform-origin: 100% 50%;
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .about__macbook {
             display: inline-block;
             bottom: -5rem;
@@ -804,11 +811,12 @@ Instead edit gulp/templates/sprite */
     clear: both;
     display: table;
     }
-@media (min-width: 800px) {
-        .row__medium-7 {
-            float: left;
-            width: 58.33%;
-        }
+.row--gutters {
+        margin-right: -15px;
+    }
+.row--gutters > div {
+        padding-right: 15px;
+        box-sizing: border-box;
     }
 @media (min-width: 530px) {
         .row__medium-6 {
@@ -816,13 +824,18 @@ Instead edit gulp/templates/sprite */
             width: 50%;
         }
     }
-@media (min-width: 1080px) {
+@media (min-width: 800px) {
+        .row__medium-7 {
+            float: left;
+            width: 58.33%;
+        }
+    }
+@media (min-width: 1468px) {
         .row__large-3 {
             float: left;
             width: 25%;
         }
-    }
-@media (min-width: 1080px) {
+
         .row__large-5 {
             float: left;
             width: 41.66%;
@@ -834,21 +847,6 @@ Instead edit gulp/templates/sprite */
     text-align: center;
     font-weight: 300;
 }
-.our-services__title {
-        display: inline-block;
-        text-transform: uppercase;
-        border-bottom: 2px solid #ed145b;
-        padding-bottom: 40px;
-        font-weight: 300;
-    }
-.our-services__subtitle {
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 2rem;
-        padding-left: 45px;
-        padding-right: 45px;
-    }
 .our-services__icon-container {
         padding-top: 80px;
     }
@@ -935,7 +933,7 @@ Instead edit gulp/templates/sprite */
                 padding-top: 8rem
         }
     }
-@media (min-width: 1080px) {
+@media (min-width: 1468px) {
 .tns-outer .tns-inner .tns-item {
                 padding-top: 10rem;
                 font-size: 1.5625rem !important
@@ -965,3 +963,80 @@ Instead edit gulp/templates/sprite */
 .slider__container {
     position: relative;
 }
+.generic-page__title {
+        display: inline-block;
+        text-transform: capitalize;
+        border-bottom: 2px solid #ed145b;
+        padding-bottom: 40px;
+        font-weight: 300;
+    }
+.generic-page__subtitle {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 2rem;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+.our-prices {
+    padding-top: 150px;
+    color: #5a5a5a;
+    text-align: center;
+    font-weight: 300;
+    background-color: #f4f4f4;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 8.5rem;
+    overflow: hidden !important;
+}
+.price-selection {
+    /* width: 260px; */
+    height: 470px;
+    background-color: white;
+    position: relative;
+    margin-top: 80px;
+}
+.price-selection__container {
+        /* background-color: white */
+    }
+.price-selection__price {
+        background-color: #5a5a5a;
+        color: #fff;
+        padding-bottom: 56px;
+        position: relative;
+        transition: 400ms ease-in all;
+    }
+.price-selection__price--active {
+            background-color: #ed145b;
+        }
+.price-selection__price__amount {
+            font-size: 50px;
+            margin: 0;
+            padding-top: 2rem;
+        }
+.price-selection__price__dollar {
+            font-size: 20px;
+            margin-right: -10px;
+        }
+.price-selection__price__per-month {
+            font-size: 1rem;
+            display: block;
+        }
+.price-selection__btn {
+
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+
+    }
+.price-selection__btn--description {
+            position: absolute;
+            top: 8.8rem;
+        }
+.price-selection__btn--buy-now {
+            position: absolute;
+            bottom: 2rem;
+        }
+.price-selection__description {
+        padding-top: 4rem;
+    }

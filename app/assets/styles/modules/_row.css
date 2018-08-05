@@ -2,17 +2,30 @@
 
     @mixin clearfix;
 
-    @mixin atMedium {
-        &__medium-7 {
-            float: left;
-            width: 58.33%;
-        }
+    &--gutters {
+        margin-right: -15px;
+    }
+
+    &--gutters > div {
+        padding-right: 15px;
+        box-sizing: border-box;
     }
 
     @mixin atSmall {
+
+        &__
+    }
+
+    @mixin atMedium {
+
         &__medium-6 {
             float: left;
             width: 50%;
+        }
+        
+        &__medium-7 {
+            float: left;
+            width: 58.33%;
         }
     }
 
@@ -21,9 +34,7 @@
             float: left;
             width: 25%;
         }
-    }
 
-    @mixin atLarge {
         &__large-5 {
             float: left;
             width: 41.66%;

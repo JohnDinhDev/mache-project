@@ -17,3 +17,6 @@
 @import 'modules/_our-services';
 @import 'modules/_tns';
 @import 'modules/_slider';
+@import 'modules/_generic-page';
+@import 'modules/_our-prices';
+@import 'modules/_price-selection';

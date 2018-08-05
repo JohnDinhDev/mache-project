@@ -1,0 +1,11 @@
+.our-prices {
+    padding-top: 150px;
+    color: $mainGray;
+    text-align: center;
+    font-weight: 300;
+    background-color: #f4f4f4;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 8.5rem;
+    overflow: hidden !important;
+}
