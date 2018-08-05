@@ -819,12 +819,14 @@ Instead edit gulp/templates/sprite */
         box-sizing: border-box;
     }
 @media (min-width: 530px) {
+    }
+@media (min-width: 800px) {
+
         .row__medium-6 {
             float: left;
             width: 50%;
         }
-    }
-@media (min-width: 800px) {
+
         .row__medium-7 {
             float: left;
             width: 58.33%;
