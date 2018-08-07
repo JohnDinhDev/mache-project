@@ -1189,6 +1189,11 @@ Instead edit gulp/templates/sprite */
             font-size: 2rem
     }
     }
+@media (min-width: 1600px) {
+.join-us__title {
+            font-size: 3.5rem
+    }
+    }
 .join-us__btn {
         display: block;
         margin-left: 2rem;

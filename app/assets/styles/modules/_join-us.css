@@ -21,6 +21,10 @@
         @mixin atMedium {
             font-size: 2rem;        
         }
+
+        @mixin atXLarge {
+            font-size: 3.5rem;
+        }
     }
 
     &__btn {
