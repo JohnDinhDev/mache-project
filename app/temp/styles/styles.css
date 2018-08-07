@@ -700,40 +700,45 @@ a {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-6f298bfe.svg');
+            background-image: url('../../assets/images/sprites/sprite-5c41eb14.svg');
         }
 .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-6f298bfe.png');            
+            background-image: url('../../assets/images/sprites/sprite-5c41eb14.png');            
         }
 .icon--customize {
         width: 51px;
         height: 59px;
-        background-position: 56.2753036437247% 88.81118881118881%;
+        background-position: 62.14574898785425% 88.81118881118881%;
+    }
+.icon--down-arrow {
+        width: 19px;
+        height: 10px;
+        background-position: 93.82352941176471% 83.1151832460733%;
     }
 .icon--edit {
         width: 139px;
         height: 139px;
-        background-position: 46.333333333333336% 100%;
+        background-position: 15.444444444444445% 100%;
     }
 .icon--free-download {
         width: 139px;
         height: 139px;
-        background-position: 15.444444444444445% 100%;
+        background-position: 30.88888888888889% 100%;
     }
 .icon--high-resolution {
         width: 59px;
         height: 59px;
-        background-position: 61.93877551020408% 88.81118881118881%;
+        background-position: 67.85714285714286% 88.81118881118881%;
     }
 .icon--hover {
         width: 47px;
         height: 47px;
-        background-position: 78.93145161290323% 87.34525447042641%;
+        background-position: 84.77822580645162% 87.34525447042641%;
     }
 .icon--left-arrow {
         width: 17px;
         height: 35px;
-        background-position: 84.63796477495107% 85.92692828146143%;
+        background-position: 90.31311154598826% 85.92692828146143%;
     }
 .icon--macbook {
         width: 1039px;
@@ -748,37 +753,37 @@ Instead edit gulp/templates/sprite */
 .icon--photography {
         width: 59px;
         height: 50px;
-        background-position: 73.87755102040816% 87.70718232044199%;
+        background-position: 79.79591836734694% 87.70718232044199%;
     }
 .icon--play {
         width: 35px;
         height: 35px;
-        background-position: 82.66932270916335% 85.92692828146143%;
+        background-position: 88.44621513944223% 85.92692828146143%;
     }
 .icon--powerful-theme {
         width: 58px;
         height: 59px;
-        background-position: 56.676860346585116% 97.06293706293707%;
+        background-position: 73.80224260958205% 88.81118881118881%;
     }
 .icon--responsive {
         width: 139px;
         height: 139px;
-        background-position: 30.88888888888889% 100%;
+        background-position: 46.333333333333336% 100%;
     }
 .icon--right-arrow {
         width: 17px;
         height: 35px;
-        background-position: 86.3013698630137% 85.92692828146143%;
+        background-position: 91.97651663405088% 85.92692828146143%;
     }
 .icon--seo {
         width: 58px;
         height: 59px;
-        background-position: 67.88990825688073% 88.81118881118881%;
+        background-position: 56.676860346585116% 88.81118881118881%;
     }
 .icon--support {
         width: 59px;
         height: 59px;
-        background-position: 62.6530612244898% 97.06293706293707%;
+        background-position: 56.734693877551024% 97.06293706293707%;
     }
 .macbook-screen {
     position: absolute;
@@ -1251,6 +1256,7 @@ Instead edit gulp/templates/sprite */
     }
 .latest-updates__img {
         position: relative;
+        overflow: hidden;
     }
 .latest-updates__description {
         background-color: #f4f4f4;
@@ -1281,7 +1287,16 @@ Instead edit gulp/templates/sprite */
         position: absolute;
         transition: all 900ms ease;
         bottom: 0;
+        left: -1px;
     }
+.latest-updates__slanted-bar--hover {
+            -webkit-transform: rotate(-2deg) skew(0);
+                    transform: rotate(-2deg) skew(0);
+            -webkit-transform-origin: 100% 0;
+                    transform-origin: 100% 0;
+            bottom: -4rem;
+            transition: all 900ms ease;
+        }
 .latest-updates__hover {
         position: absolute;
         background-color: rgba(237,20,91, 0.8);
@@ -1300,4 +1315,34 @@ Instead edit gulp/templates/sprite */
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
+    }
+.latest-updates__updates--hidden {
+        position: absolute;
+        left: -100rem;
+        opacity: 0;
+        transition: all 2000ms ease;
+        z-index: -1;
+        display: none;
+    }
+@media (min-width: 1468px) {
+.latest-updates__updates--hidden {
+            display: inline-block
+    }
+    }
+.latest-updates__show-more {
+        color: #ed145b;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: none;
+    }
+@media (min-width: 1468px) {
+.latest-updates__show-more {
+            display: block
+    }
+    }
+.latest-updates__down-arrow {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
     }

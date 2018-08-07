@@ -14,6 +14,7 @@
 
     &__img {
         position: relative;
+        overflow: hidden;
     }
 
     &__description {
@@ -47,6 +48,14 @@
         position: absolute;
         transition: all 900ms ease;
         bottom: 0;
+        left: -1px;
+
+        &--hover {
+            transform: rotate(-2deg) skew(0);
+            transform-origin: 100% 0;
+            bottom: -4rem;
+            transition: all 900ms ease;
+        }
     }
 
     &__hover {
@@ -68,5 +77,36 @@
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &__updates--hidden {
+        position: absolute;
+        left: -100rem;
+        opacity: 0;
+        transition: all 2000ms ease;
+        z-index: -1;
+        display: none;
+
+        @mixin atLarge {
+            display: inline-block;
+        }
+    }
+
+    &__show-more {
+        color: $mainRed;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: none;
+
+        @mixin atLarge {
+            display: block;
+        }
+    }
+
+    &__down-arrow {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
     }
 }
