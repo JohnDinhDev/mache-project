@@ -6,6 +6,7 @@
         border-bottom: 2px solid $mainRed;
         padding-bottom: 40px;
         font-weight: 300;
+        font-size: 2.375rem;
     }
 
     &__subtitle {
@@ -15,5 +16,9 @@
         line-height: 2rem;
         padding-left: 45px;
         padding-right: 45px;
+
+        &--updates {
+            margin-bottom: 5.625rem;
+        }
     }
 }

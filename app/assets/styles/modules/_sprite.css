@@ -2,41 +2,47 @@
 Instead edit gulp/templates/sprite */
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-85baa043.svg');
+            background-image: url('../../assets/images/sprites/sprite-6f298bfe.svg');
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-85baa043.png');            
+            background-image: url('../../assets/images/sprites/sprite-6f298bfe.png');            
         }
 
     .icon--customize {
         width: 51px;
         height: 59px;
-        background-position: 68.11740890688259% 95.8041958041958%;
+        background-position: 56.2753036437247% 88.81118881118881%;
     }
 
     .icon--edit {
         width: 139px;
         height: 139px;
-        background-position: 30.88888888888889% 100%;
+        background-position: 46.333333333333336% 100%;
     }
 
     .icon--free-download {
         width: 139px;
         height: 139px;
-        background-position: 0 100%;
+        background-position: 15.444444444444445% 100%;
     }
 
     .icon--high-resolution {
         width: 59px;
         height: 59px;
-        background-position: 56.734693877551024% 95.8041958041958%;
+        background-position: 61.93877551020408% 88.81118881118881%;
+    }
+
+    .icon--hover {
+        width: 47px;
+        height: 47px;
+        background-position: 78.93145161290323% 87.34525447042641%;
     }
 
     .icon--left-arrow {
         width: 17px;
         height: 35px;
-        background-position: 65.2641878669276% 85.92692828146143%;
+        background-position: 84.63796477495107% 85.92692828146143%;
     }
 
     .icon--macbook {
@@ -48,47 +54,47 @@ Instead edit gulp/templates/sprite */
     .icon--modern-design {
         width: 139px;
         height: 139px;
-        background-position: 15.444444444444445% 100%;
+        background-position: 0 100%;
     }
 
     .icon--photography {
         width: 59px;
         height: 50px;
-        background-position: 56.734693877551024% 87.70718232044199%;
+        background-position: 73.87755102040816% 87.70718232044199%;
     }
 
     .icon--play {
         width: 35px;
         height: 35px;
-        background-position: 61.254980079681275% 85.92692828146143%;
+        background-position: 82.66932270916335% 85.92692828146143%;
     }
 
     .icon--powerful-theme {
         width: 58px;
         height: 59px;
-        background-position: 73.80224260958205% 95.8041958041958%;
+        background-position: 56.676860346585116% 97.06293706293707%;
     }
 
     .icon--responsive {
         width: 139px;
         height: 139px;
-        background-position: 46.333333333333336% 100%;
+        background-position: 30.88888888888889% 100%;
     }
 
     .icon--right-arrow {
         width: 17px;
         height: 35px;
-        background-position: 63.60078277886497% 85.92692828146143%;
+        background-position: 86.3013698630137% 85.92692828146143%;
     }
 
     .icon--seo {
         width: 58px;
         height: 59px;
-        background-position: 62.691131498470945% 95.8041958041958%;
+        background-position: 67.88990825688073% 88.81118881118881%;
     }
 
     .icon--support {
         width: 59px;
         height: 59px;
-        background-position: 79.79591836734694% 95.8041958041958%;
+        background-position: 62.6530612244898% 97.06293706293707%;
     }

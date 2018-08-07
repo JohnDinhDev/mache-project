@@ -11,6 +11,15 @@
     }
 
 
+    &--gutters--medium {
+        margin-right: -30px;
+    }
+
+    &--gutters--medium > div {
+        padding-right: 30px;
+    }
+
+
     &__4 {
         float: left;
         width: 33.33%;

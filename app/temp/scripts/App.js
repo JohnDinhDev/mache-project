@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _Slider = __webpack_require__(/*! ./modules/Slider */ \"./app/assets/scripts/modules/Slider.js\");\n\nvar _Slider2 = _interopRequireDefault(_Slider);\n\nvar _Prices = __webpack_require__(/*! ./modules/Prices */ \"./app/assets/scripts/modules/Prices.js\");\n\nvar _Prices2 = _interopRequireDefault(_Prices);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nnew _Slider2.default();\nnew _Prices2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\n\nvar _Slider = __webpack_require__(/*! ./modules/Slider */ \"./app/assets/scripts/modules/Slider.js\");\n\nvar _Slider2 = _interopRequireDefault(_Slider);\n\nvar _Prices = __webpack_require__(/*! ./modules/Prices */ \"./app/assets/scripts/modules/Prices.js\");\n\nvar _Prices2 = _interopRequireDefault(_Prices);\n\nvar _Updates = __webpack_require__(/*! ./modules/Updates */ \"./app/assets/scripts/modules/Updates.js\");\n\nvar _Updates2 = _interopRequireDefault(_Updates);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nnew _Slider2.default();\nnew _Prices2.default();\nnew _Updates2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
@@ -119,6 +119,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _tinySlider = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ \"./node_modules/tiny-slider/src/tiny-slider.js\");\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Slider = function () {\n    function Slider() {\n        _classCallCheck(this, Slider);\n\n        this.container = document.querySelector('.slider');\n        this.slider();\n    }\n\n    _createClass(Slider, [{\n        key: 'slider',\n        value: function slider() {\n            var slider = (0, _tinySlider.tns)({\n                speed: 800,\n                nav: false,\n                autoplay: true\n            });\n        }\n    }]);\n\n    return Slider;\n}();\n\nexports.default = Slider;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Slider.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/Updates.js":
+/*!***********************************************!*\
+  !*** ./app/assets/scripts/modules/Updates.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Updates = function Updates() {\n    _classCallCheck(this, Updates);\n};\n\nexports.default = Updates;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Updates.js?");
 
 /***/ }),
 
