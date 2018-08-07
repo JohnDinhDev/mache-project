@@ -1,0 +1,28 @@
+.join-us {
+    background-color: $mainRed;
+    width: 100%;
+    vertical-align: middle;
+    height: 12.5rem;
+    color: white;
+    font-size: 2rem;
+
+    &__title {
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    &__btn {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
+    }
+}

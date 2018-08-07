@@ -700,25 +700,35 @@ a {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-902b1945.svg');
+            background-image: url('../../assets/images/sprites/sprite-85baa043.svg');
         }
 .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-902b1945.png');            
+            background-image: url('../../assets/images/sprites/sprite-85baa043.png');            
         }
+.icon--customize {
+        width: 51px;
+        height: 59px;
+        background-position: 68.11740890688259% 95.8041958041958%;
+    }
 .icon--edit {
         width: 139px;
         height: 139px;
-        background-position: 0 100%;
+        background-position: 30.88888888888889% 100%;
     }
 .icon--free-download {
         width: 139px;
         height: 139px;
-        background-position: 15.444444444444445% 100%;
+        background-position: 0 100%;
+    }
+.icon--high-resolution {
+        width: 59px;
+        height: 59px;
+        background-position: 56.734693877551024% 95.8041958041958%;
     }
 .icon--left-arrow {
         width: 17px;
         height: 35px;
-        background-position: 54.403131115459885% 85.92692828146143%;
+        background-position: 65.2641878669276% 85.92692828146143%;
     }
 .icon--macbook {
         width: 1039px;
@@ -728,12 +738,22 @@ Instead edit gulp/templates/sprite */
 .icon--modern-design {
         width: 139px;
         height: 139px;
-        background-position: 30.88888888888889% 100%;
+        background-position: 15.444444444444445% 100%;
+    }
+.icon--photography {
+        width: 59px;
+        height: 50px;
+        background-position: 56.734693877551024% 87.70718232044199%;
     }
 .icon--play {
         width: 35px;
         height: 35px;
-        background-position: 57.07171314741036% 85.92692828146143%;
+        background-position: 61.254980079681275% 85.92692828146143%;
+    }
+.icon--powerful-theme {
+        width: 58px;
+        height: 59px;
+        background-position: 73.80224260958205% 95.8041958041958%;
     }
 .icon--responsive {
         width: 139px;
@@ -743,7 +763,17 @@ Instead edit gulp/templates/sprite */
 .icon--right-arrow {
         width: 17px;
         height: 35px;
-        background-position: 59.49119373776908% 85.92692828146143%;
+        background-position: 63.60078277886497% 85.92692828146143%;
+    }
+.icon--seo {
+        width: 58px;
+        height: 59px;
+        background-position: 62.691131498470945% 95.8041958041958%;
+    }
+.icon--support {
+        width: 59px;
+        height: 59px;
+        background-position: 79.79591836734694% 95.8041958041958%;
     }
 .macbook-screen {
     position: absolute;
@@ -816,7 +846,10 @@ Instead edit gulp/templates/sprite */
     }
 .row--gutters > div {
         padding-right: 15px;
-        box-sizing: border-box;
+    }
+.row__4 {
+        float: left;
+        width: 33.33%;
     }
 @media (min-width: 530px) {
     }
@@ -836,6 +869,11 @@ Instead edit gulp/templates/sprite */
         .row__large-3 {
             float: left;
             width: 25%;
+        }
+        
+        .row__large-4 {
+            float: left;
+            width: 33.33%
         }
 
         .row__large-5 {
@@ -1041,4 +1079,114 @@ Instead edit gulp/templates/sprite */
         }
 .price-selection__description {
         padding-top: 4rem;
+    }
+.additional-information {
+    position: relative;
+    margin-top: 9.375rem;
+
+}
+@media (min-width: 800px) {
+.additional-information {
+        margin-left: 15%;
+        margin-right: 10%
+
+}
+    }
+@media (min-width: 1468px) {
+.additional-information {
+        margin-left: 20%;
+        margin-right: 20%;
+        -webkit-transform: none;
+                transform: none;
+        left: 0
+
+}
+    }
+.additional-information__section {
+        margin-bottom: 5.375rem;
+        margin-left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+@media (min-width: 800px) {
+.additional-information__section {
+            /* transform: none; */
+            margin-left: auto;
+            -webkit-transform: none;
+                    transform: none
+    }
+    }
+.additional-information__section--screen {
+            margin-bottom: 1rem;
+        }
+.additional-information__title {
+        color: #ed145b;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-left: 5.5rem;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+.additional-information__subtitle {
+        max-width: 270px;
+        color: #5a5a5a;
+        margin-left: 5.5rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+    }
+.additional-information__subtitle--screen {
+            max-width: 500px;
+        }
+.additional-information__icon {
+        display: inline-block;
+        position: absolute;
+    }
+.additional-information--screen {
+        -webkit-transform: scale(0.7) translateX(-50%);
+                transform: scale(0.7) translateX(-50%);
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+        width: 100%;
+        position: absolute;
+        margin-left: 0;
+        margin-right: 0;
+        top: -5rem;
+        left: 50%;
+        right: 5%;
+        bottom: -5rem;
+    }
+@media (max-width: 1762px) {
+.additional-information--screen {
+            -webkit-transform: scale(0.5) translateX(-50%);
+                    transform: scale(0.5) translateX(-50%);
+            width: 160%
+    }
+        }
+.join-us {
+    background-color: #ed145b;
+    width: 100%;
+    vertical-align: middle;
+    height: 12.5rem;
+    color: white;
+    font-size: 2rem;
+}
+.join-us__title {
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+.join-us__btn {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
     }

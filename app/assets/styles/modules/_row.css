@@ -8,7 +8,12 @@
 
     &--gutters > div {
         padding-right: 15px;
-        box-sizing: border-box;
+    }
+
+
+    &__4 {
+        float: left;
+        width: 33.33%;
     }
 
     @mixin atSmall {
@@ -31,6 +36,11 @@
         &__large-3 {
             float: left;
             width: 25%;
+        }
+        
+        &__large-4 {
+            float: left;
+            width: 33.33%
         }
 
         &__large-5 {
