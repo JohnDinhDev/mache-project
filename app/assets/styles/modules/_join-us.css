@@ -4,7 +4,6 @@
     vertical-align: middle;
     height: 12.5rem;
     color: white;
-    font-size: 2rem;
 
     &__title {
         font-weight: 300;
@@ -17,12 +16,33 @@
         transform: translateY(-50%);
         padding-left: 5%;
         padding-right: 5%;
+        font-size: 1.5rem;
+
+        @mixin atMedium {
+            font-size: 2rem;        
+        }
     }
 
     &__btn {
-        display: inline-block;
-        vertical-align: middle;
+        display: block;
         margin-left: 2rem;
         margin-bottom: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+
+        @media (min-width: 1014px) {
+            margin-top: auto;
+        }
+
+        @mixin atMedium {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        @mixin atLarge {
+            margin-left: 4rem;
+        }
+
     }
 }
