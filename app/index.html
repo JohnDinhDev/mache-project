@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <picture>
             <source srcset="assets/images/hero-l.jpg" media="(min-width: 1280px)">
             <source srcset="assets/images/hero-m.jpg" media="(min-width: 800px)">
@@ -35,19 +35,19 @@
 
                 <ul>
                     <li>
-                        <a class="nav-bar--red" href="#">Home</a>
+                        <a class="home-link nav-bar--red" href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a class="about-us-link" href="#about-us">About Us</a>
                     </li>
                     <li>
-                        <a href="#">Our Services</a>
+                        <a class="our-services-link" href="#our-services">Our Services</a>
                     </li>
                     <li>
-                        <a href="#">Prices</a>
+                        <a class="prices-link" href="#prices">Prices</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a class="contact-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +63,7 @@
             <a href="#" class="hero__btn btn">Show More</a>
         </div>
     </header>
-    <div class="about">
+    <div id="about-us" class="about">
         <div class="about__slanted-top"></div>
         <div class="row">
             <div class="about__title-text">
@@ -148,7 +148,7 @@
             </div>
         </div>
     </div>
-    <div class="our-services">
+    <div id="our-services" class="our-services">
         <h1 class="generic-page__title">
             <em>Our Services</em>
         </h1>
@@ -203,7 +203,7 @@
             </div>
         </div>
     </div>
-    <div class="wrapper--container">
+    <div id="prices" class="wrapper--container">
         <div class="our-prices row row--gutters">
             <h1 class="generic-page__title">
                 <em>Check Our Prices</em>
@@ -559,7 +559,7 @@
             <a href="" class="btn banner__btn">Show More</a>
         </div>
     </div>
-    <div class="download">
+    <div id="contact" class="download">
         <div class="row">
             <div class="download__screen row__large-6">
                 <img src="assets/images/top-bar.png" alt="" class="download__top-bar">
@@ -572,7 +572,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation
                     </p>
-                    <div class="our-services__icon-container row wrapper">
+                    <div class="our-services__icon-container row row--gutters">
                         <div class="our-services__icon row__large-3 row__medium-6">
                             <span class="our-services__icon icon icon--edit"></span>
                             <p class="our-services__icon-description">Fully Customizable</p>

@@ -396,6 +396,7 @@ a {
         margin-right: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
+        cursor: pointer;
     }
 .nav-bar__logo span {
             font-family: 'Proxima Nova';
@@ -1095,7 +1096,7 @@ Instead edit gulp/templates/sprite */
             margin-bottom: 5.625rem;
         }
 .our-prices {
-    padding-top: 150px;
+    padding-top: 100px;
     color: #5a5a5a;
     text-align: center;
     font-weight: 300;
