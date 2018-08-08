@@ -402,7 +402,6 @@ a {
         }
 @media (min-width: 800px) {
 .nav-bar__logo {
-            float: left;
             font-size: 1.59rem;
             text-align: center;
             display: inline;
@@ -1056,9 +1055,6 @@ Instead edit gulp/templates/sprite */
     position: relative;
     margin-top: 80px;
 }
-.price-selection__container {
-        /* background-color: white */
-    }
 .price-selection__price {
         background-color: #5a5a5a;
         color: #fff;
