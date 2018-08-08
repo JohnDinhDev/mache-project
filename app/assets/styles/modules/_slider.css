@@ -13,6 +13,11 @@
             top: -20%;
             right: 50%;
             transform: scale(-1, 1) translateX(-50%);
+
+            &--download-screen {
+                transform: scale(-0.5, 0.5) translateX(-100%);
+                top: -40%;
+            }
         }
 
 
@@ -20,11 +25,23 @@
             bottom: 5%;
             left: 50%;
             transform: translateX(-50%);    
+
+            &--download-screen {
+                transform: scale(0.5) translateX(-100%);
+                bottom: -20%;
+            }
         }
     }
 
-}
+    &__container {
+        position: relative;
+        min-height: 400px;
+        max-height: 501px;
 
-.slider__container {
-    position: relative;
+        &--screen {
+            min-height: 200px;
+            max-height: 200px;
+        }
+    }
+
 }

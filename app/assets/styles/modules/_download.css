@@ -1,0 +1,92 @@
+.download {
+    padding: 4.6875rem 10%;
+    background-color: #f4f4f4;
+    color: $mainGray;
+
+    &__screen {
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px rgba(#000, 0.16);
+        background-color: white;
+        display: none;
+        overflow: hidden;
+
+        @mixin atMedium {
+            height: 700px;
+            display: block;
+        }
+
+        @mixin atLarge {
+            height: 600px;
+        }
+
+
+        @mixin atMedium {
+        }
+    }
+
+    &__top-bar {
+        position: absolute;
+    }
+
+    &__slider {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &__text {
+        margin-left: 5%;
+        margin-top: 2rem;
+        text-align: center;
+
+        @mixin atLarge {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 40px;
+        display: inline;
+
+        @mixin atLarge {
+            display: block;
+        }
+    }
+
+    &__underline {
+        border-bottom: 2px solid $mainRed;
+        width: 30%;
+        margin: 3rem auto;
+
+        @mixin atLarge {
+            margin-left: 0;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        line-height: 1.5rem;
+        max-width: 470px;
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atLarge {
+            margin-left: 0;
+        }
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atLarge {
+            margin-left: 0;
+        }
+    }
+}

@@ -895,6 +895,11 @@ Instead edit gulp/templates/sprite */
             float: left;
             width: 41.66%;
         }
+
+        .row__large-6 {
+            float: left;
+            width: 50%;
+        }
     }
 .our-services {
     padding-top: 150px;
@@ -921,10 +926,14 @@ Instead edit gulp/templates/sprite */
         font-weight: 400;
         padding-bottom: 6rem;
     }
+.our-services--download-screen {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 50% 0;
+                transform-origin: 50% 0;
+        padding-top: 100px;
+    }
 .tns-outer {
-    /* width: 100%; */
-    min-height: 400px;
-    max-height: 501px;
     background-image: url('../../assets/images/quotes-bg.jpg');
     position: relative;
 
@@ -952,22 +961,27 @@ Instead edit gulp/templates/sprite */
                 display: block
         }
     }
-.tns-outer .tns-controls button[data-controls="prev"] {
+.tns-outer .tns-controls button[data-controls="prev"][aria-controls="tns1"] {
             background: url('../../assets/images/icons/left-arrow.svg');
             background-repeat: no-repeat;
             left: 19%;
         }
-.tns-outer .tns-controls button[data-controls="next"] {
+.tns-outer .tns-controls button[data-controls="next"][aria-controls="tns1"] {
             background: url('../../assets/images/icons/right-arrow.svg');
             background-repeat: no-repeat;
             right: 19%;
         }
-.tns-outer .tns-inner {
-
-        min-height: 400px;
-        max-height: 501px;
-    }
-.tns-outer .tns-inner .tns-item {
+.tns-outer .tns-controls button[data-controls="prev"][aria-controls="tns2"] {
+            background: url('../../assets/images/icons/left-arrow.svg');
+            background-repeat: no-repeat;
+            left: 5%;
+        }
+.tns-outer .tns-controls button[data-controls="next"][aria-controls="tns2"] {
+            background: url('../../assets/images/icons/right-arrow.svg');
+            background-repeat: no-repeat;
+            right: 5%;
+        }
+.tns-outer #tns1-iw .tns-item {
             color: white;
             font-size: 1.1rem !important;
             text-align: center;
@@ -978,20 +992,47 @@ Instead edit gulp/templates/sprite */
             max-height: 501px;
         }
 @media (min-width: 530px) {
-.tns-outer .tns-inner .tns-item {
+.tns-outer #tns1-iw .tns-item {
                 padding-top: 9rem
         }
     }
 @media (min-width: 800px) {
-.tns-outer .tns-inner .tns-item {
+.tns-outer #tns1-iw .tns-item {
                 font-size: 1.5rem !important;
                 padding-top: 8rem
         }
     }
 @media (min-width: 1468px) {
-.tns-outer .tns-inner .tns-item {
+.tns-outer #tns1-iw .tns-item {
                 padding-top: 10rem;
                 font-size: 1.5625rem !important
+        }
+    }
+.tns-outer #tns2-iw .tns-item {
+            color: white;
+            font-size: 1rem !important;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 4rem;
+            min-height: 200px;
+            max-height: 200px;
+        }
+/* padding-top: 6.5rem; */
+@media (min-width: 530px) {
+.tns-outer #tns2-iw .tns-item {
+                /* padding-top: 9rem; */
+        }
+    }
+@media (min-width: 800px) {
+.tns-outer #tns2-iw .tns-item {
+                font-size: 1 !important
+                /* padding-top: 8rem; */
+        }
+    }
+@media (min-width: 1468px) {
+.tns-outer #tns2-iw .tns-item {
+                font-size: 1 !important
         }
     }
 .slider__quotes {
@@ -1009,15 +1050,31 @@ Instead edit gulp/templates/sprite */
             -webkit-transform: scale(-1, 1) translateX(-50%);
                     transform: scale(-1, 1) translateX(-50%);
         }
+.slider__quotes--first--download-screen {
+                -webkit-transform: scale(-0.5, 0.5) translateX(-100%);
+                        transform: scale(-0.5, 0.5) translateX(-100%);
+                top: -40%;
+            }
 .slider__quotes--second {
             bottom: 5%;
             left: 50%;
             -webkit-transform: translateX(-50%);
-                    transform: translateX(-50%);    
+                    transform: translateX(-50%);
         }
+.slider__quotes--second--download-screen {
+                -webkit-transform: scale(0.5) translateX(-100%);
+                        transform: scale(0.5) translateX(-100%);
+                bottom: -20%;
+            }
 .slider__container {
-    position: relative;
-}
+        position: relative;
+        min-height: 400px;
+        max-height: 501px;
+    }
+.slider__container--screen {
+            min-height: 200px;
+            max-height: 200px;
+        }
 .generic-page__title {
         display: inline-block;
         text-transform: capitalize;
@@ -1392,3 +1449,150 @@ Instead edit gulp/templates/sprite */
 .banner__img {
         width: 100%;
     }
+.download {
+    padding: 4.6875rem 10%;
+    background-color: #f4f4f4;
+    color: #5a5a5a;
+}
+.download__screen {
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px rgba(0,0,0, 0.16);
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+@media (min-width: 800px) {
+.download__screen {
+            height: 700px;
+            display: block
+    }
+    }
+@media (min-width: 1468px) {
+.download__screen {
+            height: 600px
+    }
+    }
+@media (min-width: 800px) {
+    }
+.download__top-bar {
+        position: absolute;
+    }
+.download__slider {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+.download__text {
+        margin-left: 5%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+@media (min-width: 1468px) {
+.download__text {
+            text-align: left
+    }
+    }
+.download__title {
+        font-weight: 300;
+        font-size: 40px;
+        display: inline;
+    }
+@media (min-width: 1468px) {
+.download__title {
+            display: block
+    }
+    }
+.download__underline {
+        border-bottom: 2px solid #ed145b;
+        width: 30%;
+        margin: 3rem auto;
+    }
+@media (min-width: 1468px) {
+.download__underline {
+            margin-left: 0
+    }
+    }
+.download__subtitle {
+        font-weight: 300;
+        line-height: 1.5rem;
+        max-width: 470px;
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+@media (min-width: 1468px) {
+.download__subtitle {
+            margin-left: 0
+    }
+    }
+.download__btn {
+        display: block;
+        text-align: center;
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+@media (min-width: 1468px) {
+.download__btn {
+            margin-left: 0
+    }
+    }
+.footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: relative;
+}
+.footer::after {
+    content: '';
+    clear: both;
+    display: table;
+    }
+@media (min-width: 1000px) {
+.footer {
+        height: 150px
+}
+    }
+.footer__text {
+        float: left;
+        width: 100%;
+        height: 150px;
+    }
+@media (min-width: 1000px) {
+.footer__text {
+            line-height: 150px
+    }
+        }
+.footer__text p {
+            margin: 0;
+            text-align: center;
+            padding-top: 1.5rem;
+        }
+@media(min-width: 1000px) {
+.footer__text p {
+                padding-top: 0
+        }
+            }
+@media (min-width: 1000px) {
+.footer__copyright {
+            float: left
+        
+
+    }
+        }
+.footer__designed {
+        text-align: center;
+
+    }
+.footer__period {
+        color: #ed145b;
+        font-weight: 800;
+    }
+@media (min-width: 1000px) {
+.footer__developed {
+            float: right
+    }
+        }

@@ -56,6 +56,11 @@
             float: left;
             width: 41.66%;
         }
+
+        &__large-6 {
+            float: left;
+            width: 50%;
+        }
     }
     
 }

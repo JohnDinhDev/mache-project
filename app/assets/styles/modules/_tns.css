@@ -1,7 +1,4 @@
 .tns-outer {
-    /* width: 100%; */
-    min-height: 400px;
-    max-height: 501px;
     background-image: url('../../assets/images/quotes-bg.jpg');
     position: relative;
 
@@ -30,23 +27,32 @@
             }
         }
 
-        button[data-controls="prev"] {
+        button[data-controls="prev"][aria-controls="tns1"] {
             background: url('../../assets/images/icons/left-arrow.svg');
             background-repeat: no-repeat;
             left: 19%;
         }
 
-        button[data-controls="next"] {
+        button[data-controls="next"][aria-controls="tns1"] {
             background: url('../../assets/images/icons/right-arrow.svg');
             background-repeat: no-repeat;
             right: 19%;
         }
+
+        button[data-controls="prev"][aria-controls="tns2"] {
+            background: url('../../assets/images/icons/left-arrow.svg');
+            background-repeat: no-repeat;
+            left: 5%;
+        }
+
+        button[data-controls="next"][aria-controls="tns2"] {
+            background: url('../../assets/images/icons/right-arrow.svg');
+            background-repeat: no-repeat;
+            right: 5%;
+        }
     }
 
-    .tns-inner {
-
-        min-height: 400px;
-        max-height: 501px;
+    #tns1-iw {
 
         .tns-item {
             color: white;
@@ -70,6 +76,33 @@
             @mixin atLarge {
                 padding-top: 10rem;
                 font-size: 1.5625rem !important;
+            }
+        }
+    }
+
+    #tns2-iw {
+        .tns-item {
+            color: white;
+            font-size: 1rem !important;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 4rem;
+            min-height: 200px;
+            max-height: 200px;
+            /* padding-top: 6.5rem; */
+
+            @mixin atSmall {
+                /* padding-top: 9rem; */
+            }
+
+            @mixin atMedium {
+                font-size: 1 !important;
+                /* padding-top: 8rem; */
+            }
+
+            @mixin atLarge {
+                font-size: 1 !important;
             }
         }
     }
