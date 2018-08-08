@@ -1346,3 +1346,53 @@ Instead edit gulp/templates/sprite */
         margin-right: auto;
         padding-top: 1rem;
     }
+.banner {
+     margin-top: 5rem;
+     position: relative;
+     color: white;
+     text-align: center;
+}
+.banner__text {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+     }
+.banner__title {
+         text-transform: capitalize;
+         font-weight: 300;
+         font-size: 38px;
+     }
+.banner__underline {
+         width: 50%;
+         margin-left: auto;
+         margin-right: auto;
+         border-bottom: 2px solid #ed145b;
+         margin-top: 2rem;
+     }
+.banner__subtitle {
+         font-weight: 300;
+         max-width: 40rem;
+         line-height: 2rem;
+         display: none;
+     }
+@media (min-width: 1243px) {
+.banner__subtitle {
+             display: inline-block
+     }
+         }
+.banner__btn {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 2rem;
+     }
+@media (min-width: 800px) {
+.banner__btn {
+             margin-top: 4rem
+     }
+    }
+.banner__img {
+        width: 100%;
+    }

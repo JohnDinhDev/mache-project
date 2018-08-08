@@ -1,0 +1,54 @@
+.banner {
+     margin-top: 5rem;
+     position: relative;
+     color: white;
+     text-align: center;
+
+     &__text {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+     }
+
+     &__title {
+         text-transform: capitalize;
+         font-weight: 300;
+         font-size: 38px;
+     }
+
+     &__underline {
+         width: 50%;
+         margin-left: auto;
+         margin-right: auto;
+         border-bottom: 2px solid $mainRed;
+         margin-top: 2rem;
+     }
+
+     &__subtitle {
+         font-weight: 300;
+         max-width: 40rem;
+         line-height: 2rem;
+         display: none;
+
+         @media (min-width: 1243px) {
+             display: inline-block;
+         }
+     }
+
+     &__btn {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 2rem;
+
+         @mixin atMedium {
+             margin-top: 4rem;
+         }
+     }
+
+
+    &__img {
+        width: 100%;
+    }
+}

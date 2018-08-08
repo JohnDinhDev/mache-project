@@ -32,7 +32,7 @@ class Updates {
             this.showMore.style.display = 'none'
             window.scrollBy({
                 left: 0,
-                top: hiddenHeight,
+                top: (hiddenHeight / 2),
                 behavior: 'smooth'
             })
         })
