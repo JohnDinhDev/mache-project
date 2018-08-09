@@ -57,6 +57,8 @@
 
     &__title-text {
 
+        position: relative;
+
         @mixin atLarge {
             position: absolute;
             left: 10%;
@@ -77,10 +79,14 @@
 
     &__title--first {
 
-        margin-top: 5rem;
+        margin-top: 8rem;
 
         @mixin atSmall {
-            margin-top: 3rem;
+            margin-top: 10rem;
+        }
+
+        @mixin atLarge {
+            margin-top: 2rem;
         }
     }
 

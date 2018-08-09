@@ -2,12 +2,12 @@ import Slider from './modules/Slider'
 import Prices from './modules/Prices'
 import Updates from './modules/Updates'
 import SmoothScroll from './modules/SmoothScroll'
-import FixedNav from './modules/FixedNav'
+import NavBar from './modules/NavBar'
 
 new Slider()
 new Prices()
 new Updates()
-new FixedNav()
+new NavBar()
 
 const smoothScrollData = [{
         element: document.querySelector('#home-link'),

@@ -377,6 +377,7 @@ a {
     padding-bottom: 1rem;
     background-color: transparent;
     transition: background-color 900ms ease;
+    overflow: hidden;
 }
 .nav-bar--red {
         color: #ed145b;
@@ -423,15 +424,49 @@ a {
         padding: 0;
         float: right;
         margin: 0;
+        position: absolute;
+        padding: 3rem 30vw 10vh 30vw;
+        top: -15px;
+        left: 100vw;
+        right: -100vw;
+        background-color: black;
+        z-index: 1;
+        text-align: center;
+        border-bottom: 2px solid #ed145b;
+        transition: all 800ms ease-in;
+    }
+@media (min-width: 1468px) {
+.nav-bar ul {
+            position: unset;
+            right: 0;
+            padding: 0;
+            float: right;
+            border: none;
+            text-align: left;
+            background-color: transparent;
+            margin: 0
+    }
     }
 .nav-bar li {
         list-style: none;
         float: left;
-        display: none;
+        display: block;
+        float: none;
+        width: 100%;
+        padding-top: 3rem;
+        width: 100%;
     }
 @media (min-width: 800px) {
 .nav-bar li {
             display: inline-block
+    }
+    }
+@media (min-width: 1468px) {
+.nav-bar li {
+            width: auto;
+            float: left;
+            padding: 0;
+            padding-right: 1rem
     }
     }
 .nav-bar a {
@@ -448,6 +483,73 @@ a {
         z-index: 999999;
         border-bottom: 4px solid #ed145b;
     }
+.nav-bar__menu-icon {
+        width: 20px;
+        height: 19px;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        z-index: 10;
+    }
+@media (min-width: 1468px) {
+.nav-bar__menu-icon {
+            display: none
+    }
+    }
+.nav-bar__menu-icon::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: #fff;
+            -webkit-transform-origin: 0 0;
+                    transform-origin: 0 0;
+            transition: -webkit-transform 300ms ease-out;
+            transition: transform 300ms ease-out;
+            transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+        }
+.nav-bar__menu-icon__middle {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: #fff;
+            -webkit-transform-origin: 0 50%;
+                    transform-origin: 0 50%;
+            transition: all 300ms ease-out;
+        }
+.nav-bar__menu-icon::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            height: 2.9px;
+            background-color: #fff;
+            -webkit-transform-origin: 0 100%;
+                    transform-origin: 0 100%;
+            transition: -webkit-transform 300ms ease-out;
+            transition: transform 300ms ease-out;
+            transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+        }
+.nav-bar__menu-icon--close-x::before {
+            -webkit-transform: rotate(45deg) scaleX(1.25);
+                    transform: rotate(45deg) scaleX(1.25);
+        }
+.nav-bar__menu-icon--close-x .nav-bar__menu-icon__middle {
+            opacity: 0;
+            -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+        }
+.nav-bar__menu-icon--close-x::after {
+            -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+                    transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+        }
 .header {
     position: relative;
     z-index: 9;
@@ -606,6 +708,10 @@ a {
             padding-left: 0%
     }
     }
+.about__title-text {
+
+        position: relative;
+    }
 @media (min-width: 1468px) {
 .about__title-text {
             position: absolute;
@@ -625,11 +731,16 @@ a {
     }
 .about__title--first {
 
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 @media (min-width: 530px) {
 .about__title--first {
-            margin-top: 3rem
+            margin-top: 10rem
+    }
+    }
+@media (min-width: 1468px) {
+.about__title--first {
+            margin-top: 2rem
     }
     }
 .about__title--second {
