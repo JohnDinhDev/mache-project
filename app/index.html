@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header id="home" class="header">
+    <header id="home" class="header page-section" data-matching-link="#home-link">
         <picture>
             <source srcset="assets/images/hero-l.jpg" media="(min-width: 1280px)">
             <source srcset="assets/images/hero-m.jpg" media="(min-width: 800px)">
@@ -35,19 +35,19 @@
 
                 <ul>
                     <li>
-                        <a class="home-link nav-bar--red" href="#home">Home</a>
+                        <a id="home-link" class="nav-bar--active" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="about-us-link" href="#about-us">About Us</a>
+                        <a id="about-us-link" href="#about-us">About Us</a>
                     </li>
                     <li>
-                        <a class="our-services-link" href="#our-services">Our Services</a>
+                        <a id="our-services-link" href="#our-services">Our Services</a>
                     </li>
                     <li>
-                        <a class="prices-link" href="#prices">Prices</a>
+                        <a id="prices-link" href="#prices">Prices</a>
                     </li>
                     <li>
-                        <a class="contact-link" href="#contact">Contact</a>
+                        <a id="contact-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +63,7 @@
             <a href="#" class="hero__btn btn">Show More</a>
         </div>
     </header>
-    <div id="about-us" class="about">
+    <div id="about-us" class="about page-section" data-matching-link="#about-us-link">
         <div class="about__slanted-top"></div>
         <div class="row">
             <div class="about__title-text">
@@ -148,7 +148,7 @@
             </div>
         </div>
     </div>
-    <div id="our-services" class="our-services">
+    <div id="our-services" class="our-services page-section" data-matching-link="#our-services-link">
         <h1 class="generic-page__title">
             <em>Our Services</em>
         </h1>
@@ -203,7 +203,7 @@
             </div>
         </div>
     </div>
-    <div id="prices" class="wrapper--container">
+    <div id="prices" class="wrapper--container page-section" data-matching-link="#prices-link">
         <div class="our-prices row row--gutters">
             <h1 class="generic-page__title">
                 <em>Check Our Prices</em>
@@ -559,7 +559,7 @@
             <a href="" class="btn banner__btn">Show More</a>
         </div>
     </div>
-    <div id="contact" class="download">
+    <div id="contact" class="download page-section" data-matching-link="#contact-link" data-matching-link="#contact-link">
         <div class="row">
             <div class="download__screen row__large-6">
                 <img src="assets/images/top-bar.png" alt="" class="download__top-bar">

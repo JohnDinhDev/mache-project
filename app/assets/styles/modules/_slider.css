@@ -5,7 +5,7 @@
         color: $mainRed;
         font-size: 9.875rem;
         position: absolute;
-        z-index: 99;
+        z-index: 1;
         display: block;
 
         &--first {

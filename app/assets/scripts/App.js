@@ -2,33 +2,35 @@ import Slider from './modules/Slider'
 import Prices from './modules/Prices'
 import Updates from './modules/Updates'
 import SmoothScroll from './modules/SmoothScroll'
+import FixedNav from './modules/FixedNav'
 
 new Slider()
 new Prices()
 new Updates()
+new FixedNav()
 
 const smoothScrollData = [{
-        element: document.querySelector('.home-link'),
+        element: document.querySelector('#home-link'),
         target: document.querySelector('#home'),
         duration: 2000
     },
     {
-        element: document.querySelector('.about-us-link'),
+        element: document.querySelector('#about-us-link'),
         target: document.querySelector('#about-us'),
         duration: 2000
     },
     {
-        element: document.querySelector('.our-services-link'),
+        element: document.querySelector('#our-services-link'),
         target: document.querySelector('#our-services'),
         duration: 2000
     },
     {
-        element: document.querySelector('.prices-link'),
+        element: document.querySelector('#prices-link'),
         target: document.querySelector('#prices'),
         duration: 2000
     },
     {
-        element: document.querySelector('.contact-link'),
+        element: document.querySelector('#contact-link'),
         target: document.querySelector('#contact'),
         duration: 2000
     },

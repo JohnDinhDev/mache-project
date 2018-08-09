@@ -372,7 +372,11 @@ a {
     top: 0;
     color: white;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    transition: background-color 900ms ease;
 }
 .nav-bar--red {
         color: #ed145b;
@@ -384,6 +388,9 @@ a {
             position: relative;
             left: auto
     }
+    }
+.nav-bar--active {
+        color: #ed145b;
     }
 .nav-bar__logo {
         font-size: 3.5rem;
@@ -433,6 +440,13 @@ a {
         font-weight: 800;
         font-size: 1rem;
         padding: 5.5px;
+    }
+.nav-bar--fixed {
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);
+        margin-top: 0;
+        z-index: 999999;
+        border-bottom: 4px solid #ed145b;
     }
 .header {
     position: relative;
@@ -954,7 +968,7 @@ Instead edit gulp/templates/sprite */
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
             color: transparent;
-            z-index: 999;
+            z-index: 1;
             display: none;
         }
 @media (min-width: 800px) {
@@ -1041,7 +1055,7 @@ Instead edit gulp/templates/sprite */
         color: #ed145b;
         font-size: 9.875rem;
         position: absolute;
-        z-index: 99;
+        z-index: 1;
         display: block;
     }
 .slider__quotes--first {
