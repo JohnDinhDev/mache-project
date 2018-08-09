@@ -54,7 +54,8 @@ gulp.task('usemin', ['styles', 'scripts'], () => {
     return gulp.src('./app/index.html')
     .pipe(usemin({
         css: [() => rev(), () => cssnano()],
-        js: [() => rev(), () => uglify()]
+        js: [() => rev(), () => uglify()],
+        js1: [() => rev(), () => uglify()]
     }))
     .pipe(gulp.dest('./docs'))
 })

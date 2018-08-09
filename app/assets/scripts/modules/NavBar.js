@@ -4,12 +4,13 @@ class NavBar {
     constructor() {
         this.navBar = document.querySelector('.nav-bar')
         this.navBarLinks = this.navBar.querySelectorAll('a')
-        this.pageSectiongs = document.querySelectorAll('.page-section')
+        this.pageSections = document.querySelectorAll('.page-section')
         this.fixedNavBarTrigger = document.querySelector('#about-us')
         this.menuIcon = document.querySelector('.nav-bar__menu-icon')
         this.mediaMedium = window.matchMedia("(min-width: 800px")
         this.fixedNav()
         this.toggleMenu()
+        this.activateLinks()
     }
 
     fixedNav() {
@@ -58,6 +59,42 @@ class NavBar {
         this.navBarLinks.forEach(link => {
             link.addEventListener('click', () => {
                 this.closeMenu()
+            })
+        })
+    }
+
+    activateLinks() {
+        this.pageSections.forEach(pageSection => {
+            new Waypoint({
+                element: pageSection,
+                handler: (direction) => {
+                    if (direction === 'down') {
+                        let matchingHeaderLink = pageSection.getAttribute('data-matching-link')
+
+                        this.navBarLinks.forEach(link => {
+                            link.classList.remove('nav-bar--active')
+                        })
+
+                        document.querySelector(matchingHeaderLink).classList.add('nav-bar--active')
+                    }
+                },
+                offset: '18%'
+            })
+
+            new Waypoint({
+                element: pageSection,
+                handler: (direction) => {
+                    if (direction === 'up') {
+                        let matchingHeaderLink = pageSection.getAttribute('data-matching-link')
+
+                        this.navBarLinks.forEach(link => {
+                            link.classList.remove('nav-bar--active')
+                        })
+
+                        document.querySelector(matchingHeaderLink).classList.add('nav-bar--active')
+                    }
+                },
+                offset: '-40%'
             })
         })
     }

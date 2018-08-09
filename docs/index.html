@@ -7,107 +7,650 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Boilerplate</title>
+    <title>Mache</title>
 
 
-    <link rel="stylesheet" href="assets/styles/styles-4e9f366392.css" />
+    <link rel="stylesheet" href="assets/styles/styles-59447b2078.css"/>
+
+    <script src="assets/scripts/Vendor-634e451dfa.js"></script>
 </head>
 
 <body>
-
-    <header class="hero-landing">
-        <div class="hero-landing__container">
-            <div class="hero-landing__text-content-container">
-                <h1 class="hero-landing__title">Boilerplate</h1>
-                <p class="hero-landing__subtitle">by John Dinh</p>
-            </div>
-        </div>
-
-        <div class="btn__container hero-landing__btn">
-            <a class="btn">V</a>
-        </div>
-    </header>
-
-    <div class="nav-bar__wrapper">
+    <header id="home" class="header page-section" data-matching-link="#home-link">
+        <picture>
+            <source srcset="assets/images/hero-l.jpg" media="(min-width: 1280px)">
+            <source srcset="assets/images/hero-m.jpg" media="(min-width: 800px)">
+            <img src="assets/images/hero-s.jpg">
+        </picture>
         <nav class="nav-bar">
+            <div class="wrapper">
+                <div class="nav-bar__logo">
+                    <span class="nav-bar--red">/// </span>
+                    Mache
+                </div>
 
-            <div class="nav-bar__menu-icon">
-                <div class="nav-bar__menu-icon__middle"></div>
-            </div>
-
-            <div class="wrapper wrapper--nav">
+                <div class="nav-bar__menu-icon">
+                    <div class="nav-bar__menu-icon__middle"></div>
+                </div>
 
                 <ul>
                     <li>
-                        <a class="nav-bar__logo">Boilerplate</a>
+                        <a id="home-link" class="nav-bar--active" href="#home">Home</a>
                     </li>
-                    <div class="nav-bar__pull-right">
-                        <li>
-                            <a class="quick-start-link">Quick Start</a>
-                        </li>
-                        <li>
-                            <a class="coming-soon">Coming Soon</a>
-                        </li>
-                    </div>
+                    <li>
+                        <a id="about-us-link" href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a id="our-services-link" href="#our-services">Our Services</a>
+                    </li>
+                    <li>
+                        <a id="prices-link" href="#prices">Prices</a>
+                    </li>
+                    <li>
+                        <a id="contact-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-
             </div>
         </nav>
+        <div class="hero">
+            <h1 class="hero__title">
+                <span class="hero--bold">Mache</span>
+                Free PSD Template
+            </h1>
+            <div class="hero__underline underline"></div>
+            <p class="hero__subtitle">Elegant and clean PSD template, which you can download and use for free!</p>
+            <p class="hero__subtitle hero__subtitle--last">You can easily modify the design to make it your own and help you get your project running faster.</p>
+            <a href="#" class="hero__btn btn">Show More</a>
+        </div>
+    </header>
+    <div id="about-us" class="about page-section" data-matching-link="#about-us-link">
+        <div class="about__slanted-top"></div>
+        <div class="row">
+            <div class="about__title-text">
+                <h1 class="about__title about__title--first">
+                    <em>Powerful PSD template</em>
+                </h1>
+                <h1 class="about__title about__title--second">
+                    <em>available for free!</em>
+                </h1>
+            </div>
+            <div class="about__text row__large-5">
+                <div class="about__underline underline"></div>
+                <p class="about__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                </p>
+                <a class="about__video" href="#">
+                    See the video
+                    <span class="about__icon icon icon--play"></span>
+                </a>
+            </div>
+
+            <div class="about__macbook row__medium-7">
+                <img class="" src="assets/images/macbook.png">
+                <div class="macbook-screen">
+                    <div class="macbook-screen__top-bar"></div>
+
+                    <div class="additional-information additional-information--screen row">
+                        <div class="additional-information__section--screen row__4">
+                            <span class="additional-information__icon icon icon--high-resolution"></span>
+                            <h1 class="additional-information__title">High Resolution</h1>
+                            <p class="additional-information__subtitle additional-information__subtitle--screen">
+                                Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                            </p>
+                        </div>
+                        <div class="additional-information__section--screen row__4">
+                            <span class="additional-information__icon icon icon--photography"></span>
+                            <h1 class="additional-information__title">Photography</h1>
+                            <p class="additional-information__subtitle additional-information__subtitle">
+                                Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                            </p>
+                        </div>
+                        <div class="additional-information__section--screen row__4">
+                            <span class="additional-information__icon icon icon--customize"></span>
+                            <h1 class="additional-information__title">Easy to customize</h1>
+                            <p class="additional-information__subtitle additional-information__subtitle">
+                                Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                            </p>
+                        </div>
+                        <div class="additional-information__section--screen row__4">
+                            <span class="additional-information__icon icon icon--support"></span>
+                            <h1 class="additional-information__title">24/7 Support</h1>
+                            <p class="additional-information__subtitle additional-information__subtitle">
+                                Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                            </p>
+                        </div>
+                        <div class="additional-information__section--screen row__4">
+                            <span class="additional-information__icon icon icon--powerful-theme"></span>
+                            <h1 class="additional-information__title">Powerful Themes</h1>
+                            <p class="additional-information__subtitle additional-information__subtitle">
+                                Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                            </p>
+                        </div>
+                        <div class="additional-information__section--screen row__4">
+                            <span class="additional-information__icon icon icon--seo"></span>
+                            <h1 class="additional-information__title">SEO Optimization</h1>
+                            <p class="additional-information__subtitle additional-information__subtitle">
+                                Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="macbook-screen__join-us">
+                        <h1 class="macbook-screen__join-us__title">Become part of
+                            <strong>Mache</strong> Community Today
+                            <a class="btn btn--white macbook-screen__btn" href="#">Join Us</a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="our-services" class="our-services page-section" data-matching-link="#our-services-link">
+        <h1 class="generic-page__title">
+            <em>Our Services</em>
+        </h1>
+        <p class="generic-page__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+        </p>
+        <div class="our-services__icon-container row wrapper">
+            <div class="our-services__icon row__large-3 row__medium-6">
+                <span class="our-services__icon icon icon--edit"></span>
+                <p class="our-services__icon-description">Fully Customizable</p>
+            </div>
+            <div class="our-services__icon row__large-3 row__medium-6">
+                <span class="our-services__icon icon icon--free-download"></span>
+                <p class="our-services__icon-description">Free Download</p>
+            </div>
+            <div class="our-services__icon row__large-3 row__medium-6">
+                <span class="our-services__icon icon icon--modern-design"></span>
+                <p class="our-services__icon-description">Modern Design</p>
+            </div>
+            <div class="our-services__icon row__large-3 row__medium-6">
+                <span class="our-services__icon icon icon--responsive"></span>
+                <p class="our-services__icon-description">100% Responsive</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider__container slider__container">
+        <div class="slider__quotes__container">
+            <span class="slider__quotes slider__quotes--first">„</span>
+        </div>
+        <span class="slider__quotes slider__quotes--second">„</span>
+        <div class="slider">
+            <div>
+                <em>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor incididunt ut labore tet dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                </em>
+
+            </div>
+            <div>
+                <em>
+                    Bacon ipsum dolor amet ground round tail filet mignon, ribeye meatloaf ball tip turkey sausage landjaeger. Pancetta t-bone
+                    ham hock jowl chicken, salami strip steak bresaola.
+                </em>
+            </div>
+            <div>
+                <em>
+                    Lorem ipsum dolor amet offal locavore brooklyn, four dollar toast health goth four loko poke mumblecore PBR&B farm-to-table
+                    kogi man braid fingerstache. Adaptogen squid ugh live-edge bicycle
+                </em>
+            </div>
+        </div>
+    </div>
+    <div id="prices" class="wrapper--container page-section" data-matching-link="#prices-link">
+        <div class="our-prices row row--gutters">
+            <h1 class="generic-page__title">
+                <em>Check Our Prices</em>
+            </h1>
+            <p class="generic-page__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation
+            </p>
+            <div class="price-selection__container row__large-3 row__medium-6">
+                <div class="price-selection">
+                    <div class="price-selection__price">
+                        <h1 class="price-selection__price__amount">
+                            <span class="price-selection__price__dollar">$</span>
+                            19
+                            <span class="price-selection__price__per-month">per month</span>
+                        </h1>
+                        <a href="#" class="btn btn--gray price-selection__btn price-selection__btn--description">Standard</a>
+                    </div>
+                    <div class="price-selection__description">
+                        <p>5 Projects</p>
+                        <p>200 MB Storage</p>
+                        <p>Notification Settings</p>
+                        <p>Password Protection</p>
+                    </div>
+                    <a href="#" class="btn price-selection__btn price-selection__btn--buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="price-selection__container row__large-3 row__medium-6">
+                <div class="price-selection">
+                    <div class="price-selection__price price-selection__price--active">
+                        <h1 class="price-selection__price__amount">
+                            <span class="price-selection__price__dollar">$</span>
+                            39
+                            <span class="price-selection__price__per-month">per month</span>
+                        </h1>
+                        <a href="#" class="btn btn--gray price-selection__btn price-selection__btn--description">Business</a>
+                    </div>
+                    <div class="price-selection__description">
+                        <p>15 Projects</p>
+                        <p>1 GB Storage</p>
+                        <p>Notification Settings</p>
+                        <p>Password Protection</p>
+                    </div>
+                    <a href="#" class="btn price-selection__btn price-selection__btn--buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="price-selection__container row__large-3 row__medium-6">
+                <div class="price-selection">
+                    <div class="price-selection__price">
+                        <h1 class="price-selection__price__amount">
+                            <span class="price-selection__price__dollar">$</span>
+                            59
+                            <span class="price-selection__price__per-month">per month</span>
+                        </h1>
+                        <a href="#" class="btn btn--gray price-selection__btn price-selection__btn--description">Premium</a>
+                    </div>
+                    <div class="price-selection__description">
+                        <p>30 Projects</p>
+                        <p>2 GB Storage</p>
+                        <p>Notification Settings</p>
+                        <p>Password Protection</p>
+                    </div>
+                    <a href="#" class="btn price-selection__btn price-selection__btn--buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="price-selection__container row__large-3 row__medium-6">
+                <div class="price-selection">
+                    <div class="price-selection__price">
+                        <h1 class="price-selection__price__amount">
+                            <span class="price-selection__price__dollar">$</span>
+                            99
+                            <span class="price-selection__price__per-month">per month</span>
+                        </h1>
+                        <a href="#" class="btn btn--gray price-selection__btn price-selection__btn--description">Unlimited</a>
+                    </div>
+                    <div class="price-selection__description">
+                        <p>Unlimited Projects</p>
+                        <p>Unlimited Storage</p>
+                        <p>Notification Settings</p>
+                        <p>Password Protection</p>
+                    </div>
+                    <a href="#" class="btn price-selection__btn price-selection__btn--buy-now">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper--container">
+        <div class="additional-information row">
+            <div class="additional-information__section row__large-4 row__medium-6">
+                <span class="additional-information__icon icon icon--high-resolution"></span>
+                <h1 class="additional-information__title">High Resolution</h1>
+                <p class="additional-information__subtitle">
+                    Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                </p>
+            </div>
+            <div class="additional-information__section row__large-4 row__medium-6">
+                <span class="additional-information__icon icon icon--photography"></span>
+                <h1 class="additional-information__title">Photography</h1>
+                <p class="additional-information__subtitle">
+                    Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                </p>
+            </div>
+            <div class="additional-information__section row__large-4 row__medium-6">
+                <span class="additional-information__icon icon icon--customize"></span>
+                <h1 class="additional-information__title">Easy to customize</h1>
+                <p class="additional-information__subtitle">
+                    Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                </p>
+            </div>
+            <div class="additional-information__section row__large-4 row__medium-6">
+                <span class="additional-information__icon icon icon--support"></span>
+                <h1 class="additional-information__title">24/7 Support</h1>
+                <p class="additional-information__subtitle">
+                    Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                </p>
+            </div>
+            <div class="additional-information__section row__large-4 row__medium-6">
+                <span class="additional-information__icon icon icon--powerful-theme"></span>
+                <h1 class="additional-information__title">Powerful Themes</h1>
+                <p class="additional-information__subtitle">
+                    Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                </p>
+            </div>
+            <div class="additional-information__section row__large-4 row__medium-6">
+                <span class="additional-information__icon icon icon--seo"></span>
+                <h1 class="additional-information__title">SEO Optimization</h1>
+                <p class="additional-information__subtitle">
+                    Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+                </p>
+            </div>
+        </div>
     </div>
 
 
-    <main class="quick-start">
-        <div class="wrapper">
-            <h1 class="quick-start__title">Quick Start</h1>
-            <div class="quick-start__title__animation"></div>
+    <div class="join-us">
+        <h1 class="join-us__title">Become part of
+            <strong>Mache</strong> Community Today
+            <a href="#" class="btn btn--white join-us__btn">Join Us</a>
+        </h1>
+    </div>
 
-            <div class="steps">
-                <h1 class="steps__title">Step 1</h1>
-                <p class="steps__step">Install packages with
-                    <span class="quick-start__highlight">'npm install'</span>
-                </p>
+    <div class="latest-updates">
+        <h1 class="generic-page__title">
+            <em>Our Latest Updates</em>
+        </h1>
+        <p class="generic-page__subtitle generic-page__subtitle--updates">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+        </p>
+
+        <div class="latest-updates__updates row row--gutters--medium">
+            <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                <div class="latest-updates__section">
+                    <div class="latest-updates__img">
+                        <img src="assets/images/update-1.jpg">
+                        <div class="latest-updates__hover">
+                            <a href="#">
+                                <span class="icon icon--hover latest-updates__icon"></span>
+                            </a>
+                        </div>
+                        <div class="latest-updates__slanted-bar"></div>
+                    </div>
+                    <div class="latest-updates__description">
+                        <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                        <p class="latest-updates__description-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                <div class="latest-updates__section">
+                    <div class="latest-updates__img">
+                        <img src="assets/images/update-2.jpg">
+                        <div class="latest-updates__hover">
+                            <a href="#">
+                                <span class="icon icon--hover latest-updates__icon"></span>
+                            </a>
+                        </div>
+                        <div class="latest-updates__slanted-bar"></div>
+                    </div>
+                    <div class="latest-updates__description">
+                        <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                        <p class="latest-updates__description-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                <div class="latest-updates__section">
+                    <div class="latest-updates__img">
+                        <img src="assets/images/update-3.jpg">
+                        <div class="latest-updates__hover">
+                            <a href="#">
+                                <span class="icon icon--hover latest-updates__icon"></span>
+                            </a>
+                        </div>
+                        <div class="latest-updates__slanted-bar"></div>
+                    </div>
+                    <div class="latest-updates__description">
+                        <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                        <p class="latest-updates__description-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                <div class="latest-updates__section">
+                    <div class="latest-updates__img">
+                        <img src="assets/images/update-4.jpg">
+                        <div class="latest-updates__hover">
+                            <a href="#">
+                                <span class="icon icon--hover latest-updates__icon"></span>
+                            </a>
+                        </div>
+                        <div class="latest-updates__slanted-bar"></div>
+                    </div>
+                    <div class="latest-updates__description">
+                        <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                        <p class="latest-updates__description-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                <div class="latest-updates__section">
+                    <div class="latest-updates__img">
+                        <img src="assets/images/update-5.jpg">
+                        <div class="latest-updates__hover">
+                            <a href="#">
+                                <span class="icon icon--hover latest-updates__icon"></span>
+                            </a>
+                        </div>
+                        <div class="latest-updates__slanted-bar"></div>
+                    </div>
+                    <div class="latest-updates__description">
+                        <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                        <p class="latest-updates__description-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                <div class="latest-updates__section">
+                    <div class="latest-updates__img">
+                        <img src="assets/images/update-6.jpg">
+                        <div class="latest-updates__hover">
+                            <a href="#">
+                                <span class="icon icon--hover latest-updates__icon"></span>
+                            </a>
+                        </div>
+                        <div class="latest-updates__slanted-bar"></div>
+                    </div>
+                    <div class="latest-updates__description">
+                        <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                        <p class="latest-updates__description-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="steps">
-                <h1 class="steps__title">Step 2</h1>
-                <p class="steps__step">Initialize with
-                    <span class="quick-start__highlight">'gulp previewDist'</span>
-                </p>
+            <div class="latest-updates__updates latest-updates__updates--hidden row row--gutters">
+                <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                    <div class="latest-updates__section">
+                        <div class="latest-updates__img">
+                            <img src="assets/images/update-1.jpg">
+                            <div class="latest-updates__hover">
+                                <a href="#">
+                                    <span class="icon icon--hover latest-updates__icon"></span>
+                                </a>
+                            </div>
+                            <div class="latest-updates__slanted-bar"></div>
+                        </div>
+                        <div class="latest-updates__description">
+                            <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                            <p class="latest-updates__description-subtitle">
+                                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                    <div class="latest-updates__section">
+                        <div class="latest-updates__img">
+                            <img src="assets/images/update-2.jpg">
+                            <div class="latest-updates__hover">
+                                <a href="#">
+                                    <span class="icon icon--hover latest-updates__icon"></span>
+                                </a>
+                            </div>
+                            <div class="latest-updates__slanted-bar"></div>
+                        </div>
+                        <div class="latest-updates__description">
+                            <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                            <p class="latest-updates__description-subtitle">
+                                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-updates__section-wrapper row__large-4 row__medium-6">
+                    <div class="latest-updates__section">
+                        <div class="latest-updates__img">
+                            <img src="assets/images/update-3.jpg">
+                            <div class="latest-updates__hover">
+                                <a href="#">
+                                    <span class="icon icon--hover latest-updates__icon"></span>
+                                </a>
+                            </div>
+                            <div class="latest-updates__slanted-bar"></div>
+                        </div>
+                        <div class="latest-updates__description">
+                            <h1 class="latest-updates__description-title">Lorem Ipsuma Dolor Sit</h1>
+                            <p class="latest-updates__description-subtitle">
+                                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="steps">
-                <h1 class="steps__title">Step 3</h1>
-                <p class="steps__step">Exit preview and start
-                    <span class="quick-start__highlight">'gulp watch'</span>
-                </p>
-            </div>
+            <a href="#" class="latest-updates__show-more">
+                Show More
+                <span class="latest-updates__down-arrow icon icon--down-arrow"></span>
+            </a>
         </div>
 
-        <div class="steps">
-            <h1 class="steps__title">Step 4</h1>
-            <p class="steps__step steps__step--last">Start Coding!</span>
+    </div>
+
+    <div class="banner">
+        <picture>
+            <source srcset="assets/images/banner.jpg" media="(min-width: 1400px)">
+            <source srcset="assets/images/hero-m.jpg" media="(min-width: 655px)">
+            <img src="assets/images/banner-s.jpg" alt="" class="banner__img">
+        </picture>
+        <div class="banner__text">
+            <h1 class="banner__title">
+                <em>Mache free PSD Template</em>
+                <div class="banner__underline"></div>
+            </h1>
+            <p class="banner__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <a href="" class="btn banner__btn">Show More</a>
         </div>
-    </main>
+    </div>
+    <div id="contact" class="download page-section" data-matching-link="#contact-link" data-matching-link="#contact-link">
+        <div class="row">
+            <div class="download__screen row__large-6">
+                <img src="assets/images/top-bar.png" alt="" class="download__top-bar">
 
+                <div class="our-services our-services--download-screen">
+                    <h1 class="generic-page__title">
+                        <em>Our Services</em>
+                    </h1>
+                    <p class="generic-page__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                    </p>
+                    <div class="our-services__icon-container row row--gutters">
+                        <div class="our-services__icon row__large-3 row__medium-6">
+                            <span class="our-services__icon icon icon--edit"></span>
+                            <p class="our-services__icon-description">Fully Customizable</p>
+                        </div>
+                        <div class="our-services__icon row__large-3 row__medium-6">
+                            <span class="our-services__icon icon icon--free-download"></span>
+                            <p class="our-services__icon-description">Free Download</p>
+                        </div>
+                        <div class="our-services__icon row__large-3 row__medium-6">
+                            <span class="our-services__icon icon icon--modern-design"></span>
+                            <p class="our-services__icon-description">Modern Design</p>
+                        </div>
+                        <div class="our-services__icon row__large-3 row__medium-6">
+                            <span class="our-services__icon icon icon--responsive"></span>
+                            <p class="our-services__icon-description">100% Responsive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download__slider">
+                    <div class="slider__container slider__container--screen">
+                        <div class="slider__quotes__container">
+                            <span class="slider__quotes slider__quotes--first slider__quotes--first--download-screen">„</span>
+                        </div>
+                        <span class="slider__quotes slider__quotes--second slider__quotes--second--download-screen">„</span>
+                        <div class="slider--screen">
+                            <div>
+                                <em>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor incididunt ut labore tet dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                                </em>
+
+                            </div>
+                            <div>
+                                <em>
+                                    Bacon ipsum dolor amet ground round tail filet mignon, ribeye meatloaf ball tip turkey sausage landjaeger. Pancetta t-bone
+                                    ham hock jowl chicken, salami strip steak bresaola.
+                                </em>
+                            </div>
+                            <div>
+                                <em>
+                                    Lorem ipsum dolor amet offal locavore brooklyn, four dollar toast health goth four loko poke mumblecore PBR&B farm-to-table
+                                    kogi man braid fingerstache. Adaptogen squid ugh live-edge bicycle
+                                </em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download__text row__large-5">
+                <h1 class="download__title download__title--first">
+                    <em>Please share some love</em>
+                </h1>
+                <h1 class="download__title download__title--second">
+                    <em>by giving this repository a star!</em>
+                </h1>
+                <div class="download__underline"></div>
+                <p class="download__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                </p>
+                <a target="_blank" href="https://github.com/JohnDinhCodes/mache-project" class="btn download__btn">Visit Repository</a>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/JohnDinhCoding/" target="_blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://github.com/SavageCoding" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCarUbF8koqRy1BLRWjib6_w" target="_blank">Youtube</a>
-                </li>
-            </ul>
-        </nav>
-        <p>John Dinh &copy; 2018</p>
+        <div class="footer__text">
+            <p class="footer__copyright">&copy; 2018 John Dinh</p>
+            <p class="footer__developed">Developed by John Dinh</p>
+            <p class="footer__designed">Designed by SYMU
+                <span class="footer__period">.</span>CO</p>
+
+        </div>
     </footer>
 
-    <script src="assets/scripts/App-841c7eaaab.js"></script>
+    <script src="assets/scripts/App-e7df0f55e5.js"></script>
 </body>
 
 </html>
