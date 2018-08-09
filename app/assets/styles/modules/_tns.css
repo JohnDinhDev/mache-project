@@ -28,25 +28,25 @@
         }
 
         button[data-controls="prev"][aria-controls="tns1"] {
-            background: url('../../assets/images/icons/left-arrow.svg');
+            background: url('../../assets/images/left-arrow.svg');
             background-repeat: no-repeat;
             left: 19%;
         }
 
         button[data-controls="next"][aria-controls="tns1"] {
-            background: url('../../assets/images/icons/right-arrow.svg');
+            background: url('../../assets/images/right-arrow.svg');
             background-repeat: no-repeat;
             right: 19%;
         }
 
         button[data-controls="prev"][aria-controls="tns2"] {
-            background: url('../../assets/images/icons/left-arrow.svg');
+            background: url('../../assets/images/left-arrow.svg');
             background-repeat: no-repeat;
             left: 5%;
         }
 
         button[data-controls="next"][aria-controls="tns2"] {
-            background: url('../../assets/images/icons/right-arrow.svg');
+            background: url('../../assets/images/right-arrow.svg');
             background-repeat: no-repeat;
             right: 5%;
         }

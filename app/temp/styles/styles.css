@@ -825,10 +825,10 @@ a {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-5c41eb14.svg');
+            background-image: url('../../assets/images/sprites/sprite-dd1aa10f.svg');
         }
 .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-5c41eb14.png');            
+            background-image: url('../../assets/images/sprites/sprite-dd1aa10f.png');            
         }
 .icon--customize {
         width: 51px;
@@ -838,7 +838,7 @@ Instead edit gulp/templates/sprite */
 .icon--down-arrow {
         width: 19px;
         height: 10px;
-        background-position: 93.82352941176471% 83.1151832460733%;
+        background-position: 84.80392156862744% 83.1151832460733%;
     }
 .icon--edit {
         width: 139px;
@@ -858,12 +858,7 @@ Instead edit gulp/templates/sprite */
 .icon--hover {
         width: 47px;
         height: 47px;
-        background-position: 84.77822580645162% 87.34525447042641%;
-    }
-.icon--left-arrow {
-        width: 17px;
-        height: 35px;
-        background-position: 90.31311154598826% 85.92692828146143%;
+        background-position: 78.93145161290323% 87.34525447042641%;
     }
 .icon--macbook {
         width: 1039px;
@@ -878,27 +873,22 @@ Instead edit gulp/templates/sprite */
 .icon--photography {
         width: 59px;
         height: 50px;
-        background-position: 79.79591836734694% 87.70718232044199%;
+        background-position: 73.87755102040816% 87.70718232044199%;
     }
 .icon--play {
         width: 35px;
         height: 35px;
-        background-position: 88.44621513944223% 85.92692828146143%;
+        background-position: 82.66932270916335% 85.92692828146143%;
     }
 .icon--powerful-theme {
         width: 58px;
         height: 59px;
-        background-position: 73.80224260958205% 88.81118881118881%;
+        background-position: 56.676860346585116% 97.06293706293707%;
     }
 .icon--responsive {
         width: 139px;
         height: 139px;
         background-position: 46.333333333333336% 100%;
-    }
-.icon--right-arrow {
-        width: 17px;
-        height: 35px;
-        background-position: 91.97651663405088% 85.92692828146143%;
     }
 .icon--seo {
         width: 58px;
@@ -908,7 +898,7 @@ Instead edit gulp/templates/sprite */
 .icon--support {
         width: 59px;
         height: 59px;
-        background-position: 56.734693877551024% 97.06293706293707%;
+        background-position: 62.6530612244898% 97.06293706293707%;
     }
 .macbook-screen {
     position: absolute;
@@ -1088,22 +1078,22 @@ Instead edit gulp/templates/sprite */
         }
     }
 .tns-outer .tns-controls button[data-controls="prev"][aria-controls="tns1"] {
-            background: url('../../assets/images/icons/left-arrow.svg');
+            background: url('../../assets/images/left-arrow.svg');
             background-repeat: no-repeat;
             left: 19%;
         }
 .tns-outer .tns-controls button[data-controls="next"][aria-controls="tns1"] {
-            background: url('../../assets/images/icons/right-arrow.svg');
+            background: url('../../assets/images/right-arrow.svg');
             background-repeat: no-repeat;
             right: 19%;
         }
 .tns-outer .tns-controls button[data-controls="prev"][aria-controls="tns2"] {
-            background: url('../../assets/images/icons/left-arrow.svg');
+            background: url('../../assets/images/left-arrow.svg');
             background-repeat: no-repeat;
             left: 5%;
         }
 .tns-outer .tns-controls button[data-controls="next"][aria-controls="tns2"] {
-            background: url('../../assets/images/icons/right-arrow.svg');
+            background: url('../../assets/images/right-arrow.svg');
             background-repeat: no-repeat;
             right: 5%;
         }
