@@ -2,7 +2,7 @@
 
 ## What is this project?
 
-The Mache Project is where I took a template from [SYMCU.CO](https://symu.co/) and convert it to a static website from scratch
+The Mache Project is where I took a template from [SYMCU.CO](https://symu.co/) and converted it to a static website from scratch
 
 ## What was the purpose of this?
 
