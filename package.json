@@ -4,7 +4,7 @@
   "description": "Boilerplate for Front-end Projects",
   "main": "index.js",
   "dependencies": {
-    "lazysizes": "^4.0.4",
+    "lazysizes": "^5.2.2",
     "normalize.css": "^8.0.0",
     "picturefill": "^3.0.2",
     "smoothscroll": "^0.4.0",
